@@ -1,6 +1,8 @@
 ## Introduction
 Project repository for RC-XD<br>
 A remote controlled car project, currently only containing the reciever project files<br>
+The project design description can be found [HERE](https://docs.google.com/document/d/1IkSoV4714EhC4LcSWzFsmU4UmifhLQG45a5PKD9-OiM/edit?tab=t.0)<br>
+The project timeline is [HERE](https://docs.google.com/document/d/1Baed8mpfqgpyJ5yqUqOmzXT9Kg_jJRIP0yAwD-ANLqw/edit?usp=sharing)
 
 ## Components
 * MCU - [STM32F103Cx](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)
