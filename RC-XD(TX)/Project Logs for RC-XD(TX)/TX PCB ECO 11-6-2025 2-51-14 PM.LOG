@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=C108 Old DesignItemId=CMP-0001-00036-3 New DesignItemId=CMP-0001-00036-4
+Change Component Footprint: Designator=C108 Old Footprint=1210_Tantalum New Footprint=1210_Tantalum
+Change Managed Component Library Link : Designator=C108 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=fc23f542-c9ad-4894-a558-3f8389706998 New ItemGUID=fc23f542-c9ad-4894-a558-3f8389706998 Old RevisionGUID=E9B8640B-AC43-46C2-8872-00EC1CFDA247 New RevisionGUID=a6268dc1-ce99-4153-a589-ea407084d5f0
