@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J500
+Change Component Designator: OldDesignator=J? NewDesignator=J501
+Change Component Designator: OldDesignator=J? NewDesignator=J502
+Added Member To Class: ClassName=Headers and Connectors Member=Component J501 7-215079-6
+Added Member To Class: ClassName=Headers and Connectors Member=Component J502 7-215079-6
