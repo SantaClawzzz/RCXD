@@ -1,5 +1,5 @@
 Boot pin=BOOT0
-Driver Control=SDI,SDO,SCK,CSN,SWP,SWN,SD,SPI
+Driver Control=SDI,SDO,SCK,CS,IS1,IS2
 Hall Sensors=M1_P,M1_N,M2_P,M2_N
 I2C=SDA,SCL
 LED=FRONT_LED,DBG_LED

@@ -84,13 +84,13 @@ GenerateClassCluster=0
 DocumentUniqueId=KPROZWFT
 
 [Document3]
-DocumentPath=..\RC-XD (TX)\Driver.SchDoc
+DocumentPath=Driver.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=200
-AnnotationIndexControlEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=2
+AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -98,7 +98,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WUQQCWUD
+DocumentUniqueId=
 
 [Document4]
 DocumentPath=Power.SchDoc
@@ -221,6 +221,23 @@ DocumentUniqueId=
 
 [Document11]
 DocumentPath=RC-XD(RX).OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
+[Document12]
+DocumentPath=Driver.Harness
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
