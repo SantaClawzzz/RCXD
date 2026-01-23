@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=+12V Pin=SW300-1
+Removed Pin From Net: NetName=+12V Pin=SW300-2
+Removed Member From Class: ClassName=Power Member=SW300
+Added Pin To Net: NetName=+12V Pin=J300-1
+Added Member To Class: ClassName=Power Member=Component C302 4.7u
+Added Member To Class: ClassName=Power Member=Component C303 22u
+Added Member To Class: ClassName=MCU and USB-C Member=Component C400 100n
+Added Member To Class: ClassName=MCU and USB-C Member=Component C402 100n
+Added Member To Class: ClassName=MCU and USB-C Member=Component C403 4.7u
+Added Member To Class: ClassName=Power Member=Component D301 VSSAF3M10HM3/H
+Added Member To Class: ClassName=Power Member=Component D305 Red
+Added Member To Class: ClassName=Power Member=Component R304 200R
+Added Member To Class: ClassName=Power Member=Component R305 1k
+Added Member To Class: ClassName=MCU and USB-C Member=Component R400 10k
+Added Member To Class: ClassName=MCU and USB-C Member=Component R404 1.5k

@@ -1,2 +1,0 @@
-Driver Control=SDI,SDO,SCK,CSN,SWP,SWN,SD,SPI
-Motors=M1_P,M1_N,M2_P,M2_N

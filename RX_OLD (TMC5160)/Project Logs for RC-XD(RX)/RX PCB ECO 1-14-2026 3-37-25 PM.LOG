@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=BAT_+ Pin=SW300-1
+Removed Pin From Net: NetName=BAT_+ Pin=SW300-2
+Removed Pin From Net: NetName=+12V Pin=SW300-3
+Removed Pin From Net: NetName=+12V Pin=SW300-4
+Added Pin To Net: NetName=+12V Pin=SW300-1
+Added Pin To Net: NetName=+12V Pin=SW300-2
+Added Pin To Net: NetName=BAT_+ Pin=SW300-3
+Added Pin To Net: NetName=BAT_+ Pin=SW300-4
