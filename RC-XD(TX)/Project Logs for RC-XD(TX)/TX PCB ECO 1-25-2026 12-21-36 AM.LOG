@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=3V3 Pin=P100-1
+Removed Pin From Net: NetName=5V Pin=P100-2
+Removed Pin From Net: NetName=MCU_TX Pin=P100-3
+Removed Pin From Net: NetName=PB11 Pin=P100-4
+Removed Pin From Net: NetName=PB12 Pin=P100-6
+Removed Pin From Net: NetName=GND Pin=P100-7
+Removed Pin From Net: NetName=PB13 Pin=P100-8
+Added Pin To Net: NetName=PB12 Pin=P100-1
+Added Pin To Net: NetName=PB11 Pin=P100-2
+Added Pin To Net: NetName=PB13 Pin=P100-3
+Added Pin To Net: NetName=5V Pin=P100-4
+Added Pin To Net: NetName=3V3 Pin=P100-6
+Added Pin To Net: NetName=MCU_TX Pin=P100-7
+Added Pin To Net: NetName=GND Pin=P100-8
