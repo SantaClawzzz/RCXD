@@ -98,7 +98,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=KJZTOKOP
 
 [Document4]
 DocumentPath=Power.SchDoc
@@ -262,32 +262,32 @@ DocumentPath=Project Outputs for RC-XD(RX)\Power.NET
 DItemRevisionGUID=
 
 [Parameter1]
-Name=GlobalAddress
-Value=Tallinn
+Name=GlobalRevisionEngineer
+Value=Robin Madar
 
 [Parameter2]
-Name=GlobalAddress2
-Value=Harju maakond
+Name=GlobalRevisionDate
+Value=2026-1-26
 
 [Parameter3]
-Name=GlobalProjectRevision
-Value=v1
+Name=GlobalProjectTitleAbr
+Value=RX_PCB
 
 [Parameter4]
 Name=GlobalProjectTitle
 Value=RC-XD
 
 [Parameter5]
-Name=GlobalProjectTitleAbr
-Value=RX_PCB
+Name=GlobalProjectRevision
+Value=v1.2
 
 [Parameter6]
-Name=GlobalRevisionDate
-Value=2026-1-14
+Name=GlobalAddress2
+Value=Harju maakond
 
 [Parameter7]
-Name=GlobalRevisionEngineer
-Value=Robin Madar
+Name=GlobalAddress
+Value=Tallinn
 
 [Configuration1]
 Name=Sources
