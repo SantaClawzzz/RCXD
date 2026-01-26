@@ -1,6 +1,0 @@
-Boot pin=BOOT0
-Hall Sensors=M1_P,M1_N,M2_P,M2_N
-I2C=SDA,SCL
-Motors=M1_P,M1_N,M2_P,M2_N
-RF Reciever=RF
-TOF Sensors=TOF_1,TOF_2,TOF_3

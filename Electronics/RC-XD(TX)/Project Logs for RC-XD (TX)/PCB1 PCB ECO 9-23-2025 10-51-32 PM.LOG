@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=JOY_V Pin=U2-37
+Removed Pin From Net: NetName=JOY_SEL Pin=U2-38
+Removed Pin From Net: NetName=JOY_H Pin=U2-39
+Added Pin To Net: NetName=JOY_SEL Pin=U2-37
+Added Pin To Net: NetName=JOY_H Pin=U2-38
+Added Pin To Net: NetName=JOY_V Pin=U2-39

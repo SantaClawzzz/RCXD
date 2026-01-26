@@ -1,9 +1,0 @@
-Removed Pin From Net: NetName=+5V Pin=U200-1
-Added Pin To Net: NetName=NetC205_1 Pin=C225-2
-Added Pin To Net: NetName=NetC205_1 Pin=C226-2
-Added Pin To Net: NetName=NetC205_1 Pin=L201-2
-Added Pin To Net: NetName=NetC205_1 Pin=R223-2
-Added Pin To Net: NetName=NetC205_1 Pin=R226-1
-Added Pin To Net: NetName=NetC205_1 Pin=U200-1
-Change Net Name : Old Net Name=NetC205_1 New Net Name=+3V3
-Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Fuchsia

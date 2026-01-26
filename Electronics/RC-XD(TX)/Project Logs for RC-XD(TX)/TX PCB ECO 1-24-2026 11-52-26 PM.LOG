@@ -1,0 +1,22 @@
+Added Component: Designator=P?(61300511121)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "61300511121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PA5 Pin=P?-1
+Added Pin To Net: NetName=PA5 Pin=U100-15
+Added Net: Name=PA5
+Added Pin To Net: NetName=PA6 Pin=P?-2
+Added Pin To Net: NetName=PA6 Pin=U100-16
+Added Net: Name=PA6
+Added Pin To Net: NetName=PA7 Pin=P?-3
+Added Pin To Net: NetName=PA7 Pin=U100-17
+Added Net: Name=PA7
+Added Pin To Net: NetName=PB5 Pin=P?-4
+Added Pin To Net: NetName=PB5 Pin=U100-41
+Added Net: Name=PB5
+Added Pin To Net: NetName=PB6 Pin=P?-5
+Added Pin To Net: NetName=PB6 Pin=U100-42
+Added Net: Name=PB6
+Added Member To Class: ClassName=TX Member=Component P? 61300511121

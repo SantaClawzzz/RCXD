@@ -1,0 +1,47 @@
+Removed Pin From Net: NetName=+5V Pin=U202-1
+Removed Pin From Net: NetName=RF_DATA Pin=U202-2
+Removed Pin From Net: NetName=RF_DATA Pin=U202-3
+Removed Pin From Net: NetName=GND Pin=U202-4
+Added Component: Designator=L200(MPX1D1770L101-Footprint-1)
+Add component (AddParameter): Name = "Case/Package"; Value = "6767"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DC Resistance (DCR)"; Value = "92mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Current Rating"; Value = "4.5A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Terminals"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MPX1D1770L101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Self Resonant Frequency"; Value = "1.8MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Shielding"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Test Frequency"; Value = "100kHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "20%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "110.3mO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Width"; Value = "17mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC205_1 Pin=C206-1
+Added Pin To Net: NetName=NetC205_1 Pin=C207-1
+Added Pin To Net: NetName=NetD206_1 Pin=L200-1
+Added Pin To Net: NetName=+5V Pin=L200-2
+Added Pin To Net: NetName=NetC205_1 Pin=U200-9
+Added Pin To Net: NetName=NetC205_1 Pin=U200-36
+Added Pin To Net: NetName=NetC205_1 Pin=U200-48
+Added Member To Class: ClassName=RX Member=Component D200 Clear
+Added Member To Class: ClassName=RX Member=Component D201 Clear
+Added Member To Class: ClassName=RX Member=Component D202 Clear
+Added Member To Class: ClassName=RX Member=Component D203 Clear
+Added Member To Class: ClassName=RX Member=Component L200 MPX1D1770L101
+Added Member To Class: ClassName=RX Member=Component Q208 BSS84-7-F
+Added Member To Class: ClassName=RX Member=Component Q209 MMBT3904-TP
+Added Member To Class: ClassName=RX Member=Component R213 100R
+Added Member To Class: ClassName=RX Member=Component R214 10k
+Added Member To Class: ClassName=RX Member=Component R215 100R
+Added Member To Class: ClassName=RX Member=Component R216 100R
+Added Member To Class: ClassName=RX Member=Component R217 5.1k
+Added Member To Class: ClassName=RX Member=Component R218 100R

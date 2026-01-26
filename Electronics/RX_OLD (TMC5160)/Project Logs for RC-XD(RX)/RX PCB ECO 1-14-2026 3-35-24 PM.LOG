@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=BAT_+ Pin=P300-1
+Removed Pin From Net: NetName=GND Pin=P300-2
+Change Component Footprint: Designator=P300 Old Footprint=B5B-PH-K-S(LF)(SN) New Footprint=XT60 male TH
+Change Component Footprint: Designator=SW300 Old Footprint=FP-JS202011CQN-MFG New Footprint=SW-T2-3A-A-A2-M2
+Change Component Comment : Designator=SW300 Old Comment=JS202011CQN New Comment=SW-T2-3A-A-A2-M2
+Change Component Comment : Designator=P300 Old Comment=S2B-PH-K-S(LF)(SN) New Comment=XT60 Male
+Change Managed Component Library Link : Designator=P300 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=a820c044-79d7-404c-80d7-34a43e8c8c1c New ItemGUID=35f09475-e691-49d6-afba-479a30e2a459 Old RevisionGUID=730f2a6b-0bfa-477b-b9f5-a41d55ccbb8f New RevisionGUID=7811f381-0a36-4931-9547-0c22e95d5a13
+Change Managed Component Library Link : Designator=SW300 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=fe4ce1f9-e534-4d35-a5af-f65c29a70f96 New ItemGUID=fd24cfdf-4959-4e68-958f-a43fbe383b53 Old RevisionGUID=2b62e5cc-8c9b-49bb-af37-df7e35758503 New RevisionGUID=41166039-7c72-45cb-83e4-4444de8e283b
+Change component parameters: Designator = "SW300" ("SW300"); Footprint = "FP-JS202011CQN-MFG"; UniqueID = "\XHPAJJSO\UDQOYJNV" ("\XHPAJJSO\UDQOYJNV")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "Non-standard"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Adam Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "SW-T2-3A-A-A2-M2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters: Designator = "P300" ("P300"); Footprint = "B5B-PH-K-S(LF)(SN)"; UniqueID = "\XHPAJJSO\CRKLRKKI" ("\XHPAJJSO\CRKLRKKI")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "DFRobot"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "1738-1437-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=P300--
+Added Pin To Net: NetName=BAT_+ Pin=P300-+
+Added Pin To Net: NetName=BAT_+ Pin=SW300-1
+Added Pin To Net: NetName=+12V Pin=SW300-4

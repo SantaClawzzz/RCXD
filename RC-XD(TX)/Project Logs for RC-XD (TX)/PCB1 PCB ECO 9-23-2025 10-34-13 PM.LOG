@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=SW_L Pin=U2-21
-Removed Pin From Net: NetName=SW_R Pin=U2-22
-Added Pin To Net: NetName=SW_R Pin=U2-8
-Added Pin To Net: NetName=SW_L Pin=U2-10

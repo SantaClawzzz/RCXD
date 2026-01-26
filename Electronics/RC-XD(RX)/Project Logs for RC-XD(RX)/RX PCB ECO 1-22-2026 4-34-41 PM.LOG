@@ -1,0 +1,421 @@
+Removed Pin From Net: NetName=+12V Pin=C201-1
+Removed Pin From Net: NetName=GND Pin=C202-1
+Removed Pin From Net: NetName=+12V Pin=C202-2
+Removed Pin From Net: NetName=GND Pin=C203-1
+Removed Pin From Net: NetName=+12V Pin=C203-2
+Removed Pin From Net: NetName=GND Pin=C204-1
+Removed Pin From Net: NetName=+12V Pin=C204-2
+Removed Pin From Net: NetName=M1_P Pin=C205-2
+Removed Pin From Net: NetName=GND Pin=C206-1
+Removed Pin From Net: NetName=GND Pin=C207-1
+Removed Pin From Net: NetName=GND Pin=C208-1
+Removed Pin From Net: NetName=+12V Pin=C208-2
+Removed Pin From Net: NetName=M1_N Pin=C209-2
+Removed Pin From Net: NetName=GND Pin=C210-1
+Removed Pin From Net: NetName=+12V Pin=C211-1
+Removed Pin From Net: NetName=GND Pin=C211-2
+Removed Pin From Net: NetName=M2_P Pin=C212-2
+Removed Pin From Net: NetName=M2_N Pin=C213-2
+Removed Pin From Net: NetName=GND Pin=C214-1
+Removed Pin From Net: NetName=+5V Pin=C214-2
+Removed Pin From Net: NetName=M1_N Pin=Q200-1
+Removed Pin From Net: NetName=M1_N Pin=Q200-2
+Removed Pin From Net: NetName=M1_N Pin=Q200-3
+Removed Pin From Net: NetName=+12V Pin=Q200-5-6-7-8
+Removed Pin From Net: NetName=M1_P Pin=Q201-1
+Removed Pin From Net: NetName=M1_P Pin=Q201-2
+Removed Pin From Net: NetName=M1_P Pin=Q201-3
+Removed Pin From Net: NetName=+12V Pin=Q201-5-6-7-8
+Removed Pin From Net: NetName=M1_N Pin=Q202-5-6-7-8
+Removed Pin From Net: NetName=M1_P Pin=Q203-5-6-7-8
+Removed Pin From Net: NetName=M2_P Pin=Q204-1
+Removed Pin From Net: NetName=M2_P Pin=Q204-2
+Removed Pin From Net: NetName=M2_P Pin=Q204-3
+Removed Pin From Net: NetName=+12V Pin=Q204-5-6-7-8
+Removed Pin From Net: NetName=M2_N Pin=Q205-1
+Removed Pin From Net: NetName=M2_N Pin=Q205-2
+Removed Pin From Net: NetName=M2_N Pin=Q205-3
+Removed Pin From Net: NetName=+12V Pin=Q205-5-6-7-8
+Removed Pin From Net: NetName=M2_N Pin=Q206-5-6-7-8
+Removed Pin From Net: NetName=M2_P Pin=Q207-5-6-7-8
+Removed Pin From Net: NetName=GND Pin=R206-1
+Removed Pin From Net: NetName=GND Pin=R207-1
+Removed Pin From Net: NetName=GND Pin=R213-1
+Removed Pin From Net: NetName=GND Pin=R214-1
+Removed Pin From Net: NetName=+12V Pin=U200-4
+Removed Pin From Net: NetName=GND Pin=U200-6
+Removed Pin From Net: NetName=GND Pin=U200-11
+Removed Pin From Net: NetName=GND Pin=U200-12
+Removed Pin From Net: NetName=CSN Pin=U200-13
+Removed Pin From Net: NetName=SCK Pin=U200-14
+Removed Pin From Net: NetName=SDI Pin=U200-15
+Removed Pin From Net: NetName=SDO Pin=U200-16
+Removed Pin From Net: NetName=GND Pin=U200-19
+Removed Pin From Net: NetName=+5V Pin=U200-20
+Removed Pin From Net: NetName=SD Pin=U200-21
+Removed Pin From Net: NetName=SPI Pin=U200-22
+Removed Pin From Net: NetName=GND Pin=U200-28
+Removed Pin From Net: NetName=GND Pin=U200-30
+Removed Pin From Net: NetName=+12V Pin=U200-33
+Removed Pin From Net: NetName=M2_P Pin=U200-37
+Removed Pin From Net: NetName=M2_N Pin=U200-40
+Removed Pin From Net: NetName=M1_P Pin=U200-45
+Removed Pin From Net: NetName=M1_N Pin=U200-48
+Removed Pin From Net: NetName=GND Pin=U200-49
+Removed Pin From Net: NetName=SDO Pin=U400-25
+Removed Pin From Net: NetName=SDI Pin=U400-27
+Removed Pin From Net: NetName=CSN Pin=U400-28
+Removed Member From Class: ClassName=Motor driver Member=C200
+Removed Member From Class: ClassName=Motor driver Member=C201
+Removed Member From Class: ClassName=Motor driver Member=C202
+Removed Member From Class: ClassName=Motor driver Member=C203
+Removed Member From Class: ClassName=Motor driver Member=C204
+Removed Member From Class: ClassName=Motor driver Member=C205
+Removed Member From Class: ClassName=Motor driver Member=C206
+Removed Member From Class: ClassName=Motor driver Member=C207
+Removed Member From Class: ClassName=Motor driver Member=C208
+Removed Member From Class: ClassName=Motor driver Member=C209
+Removed Member From Class: ClassName=Motor driver Member=C210
+Removed Member From Class: ClassName=Motor driver Member=C211
+Removed Member From Class: ClassName=Motor driver Member=C212
+Removed Member From Class: ClassName=Motor driver Member=C213
+Removed Member From Class: ClassName=Motor driver Member=C214
+Removed Member From Class: ClassName=Motor driver Member=Q200
+Removed Member From Class: ClassName=Motor driver Member=Q201
+Removed Member From Class: ClassName=Motor driver Member=Q202
+Removed Member From Class: ClassName=Motor driver Member=Q203
+Removed Member From Class: ClassName=Motor driver Member=Q204
+Removed Member From Class: ClassName=Motor driver Member=Q205
+Removed Member From Class: ClassName=Motor driver Member=Q206
+Removed Member From Class: ClassName=Motor driver Member=Q207
+Removed Member From Class: ClassName=Motor driver Member=R200
+Removed Member From Class: ClassName=Motor driver Member=R201
+Removed Member From Class: ClassName=Motor driver Member=R202
+Removed Member From Class: ClassName=Motor driver Member=R203
+Removed Member From Class: ClassName=Motor driver Member=R204
+Removed Member From Class: ClassName=Motor driver Member=R205
+Removed Member From Class: ClassName=Motor driver Member=R206
+Removed Member From Class: ClassName=Motor driver Member=R207
+Removed Member From Class: ClassName=Motor driver Member=R208
+Removed Member From Class: ClassName=Motor driver Member=R209
+Removed Member From Class: ClassName=Motor driver Member=R210
+Removed Member From Class: ClassName=Motor driver Member=R211
+Removed Member From Class: ClassName=Motor driver Member=R212
+Removed Member From Class: ClassName=Motor driver Member=R213
+Removed Member From Class: ClassName=Motor driver Member=R214
+Removed Member From Class: ClassName=Motor driver Member=U200
+Added Component: Designator=C1(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 4.7u, 10%, 35V, X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C2(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 4.7u, 10%, 35V, X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7µF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C3(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 35V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C4(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 35V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C5(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 35V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C6(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 35V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "35V"; VariantName = "[No Variations]"
+Added Component: Designator=C7(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G/NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 15p, 5%, 50V, C0G/NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "15pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C8(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "C0G/NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 15p, 5%, 50V, C0G/NP0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "15pF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R1(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 2k, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "2k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=U1(BTM9011EPXUMA1)
+Add component (AddParameter): Name = "Case/Package"; Value = "14-TSSOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output"; Value = "9.2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "SPI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Infineon Technologies"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Motor Type - AC, DC"; Value = "Brushed DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40C ~ 150C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output configuration"; Value = "Full bridge"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "BTM9011EPXUMA1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Load"; Value = "4.5V ~ 40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5V ~ 40V"; VariantName = "[No Variations]"
+Added Component: Designator=U2(BTM9011EPXUMA1)
+Add component (AddParameter): Name = "Case/Package"; Value = "14-TSSOP"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current - Output"; Value = "9.2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Interface"; Value = "SPI"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Infineon Technologies"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Motor Type - AC, DC"; Value = "Brushed DC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature"; Value = "-40C ~ 150C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output configuration"; Value = "Full bridge"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "BTM9011EPXUMA1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Load"; Value = "4.5V ~ 40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage - Supply"; Value = "4.5V ~ 40V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12V Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=+12V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=+12V Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=+12V Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=+12V Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=+12V Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=+3V3 Pin=R1-2
+Added Pin To Net: NetName=SDI Pin=R2-1
+Added Pin To Net: NetName=CSN Pin=R3-1
+Added Pin To Net: NetName=CSN Pin=R4-1
+Added Pin To Net: NetName=SCK Pin=R5-1
+Added Pin To Net: NetName=SCK Pin=R6-1
+Added Pin To Net: NetName=M1_P Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-3
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=M1_N Pin=U1-7
+Added Pin To Net: NetName=M1_N Pin=U1-8
+Added Pin To Net: NetName=+12V Pin=U1-11
+Added Pin To Net: NetName=+12V Pin=U1-12
+Added Pin To Net: NetName=M1_P Pin=U1-14
+Added Pin To Net: NetName=M2_P Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-4
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=M2_N Pin=U2-7
+Added Pin To Net: NetName=M2_N Pin=U2-8
+Added Pin To Net: NetName=SDO Pin=U2-9
+Added Pin To Net: NetName=+12V Pin=U2-11
+Added Pin To Net: NetName=+12V Pin=U2-12
+Added Pin To Net: NetName=M2_P Pin=U2-14
+Added Pin To Net: NetName=CSN Pin=U400-25
+Added Pin To Net: NetName=SDO Pin=U400-27
+Added Pin To Net: NetName=SDI Pin=U400-28
+Added Pin To Net: NetName=IS1 Pin=C7-1
+Added Pin To Net: NetName=IS1 Pin=R7-1
+Added Pin To Net: NetName=IS1 Pin=U400-16
+Added Net: Name=IS1
+Added Pin To Net: NetName=IS2 Pin=C8-1
+Added Pin To Net: NetName=IS2 Pin=R8-1
+Added Pin To Net: NetName=IS2 Pin=U400-17
+Added Net: Name=IS2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=NetR1_1 Pin=U1-9
+Added Pin To Net: NetName=NetR1_1 Pin=U2-2
+Added Net: Name=NetR1_1
+Added Pin To Net: NetName=NetR2_2 Pin=R2-2
+Added Pin To Net: NetName=NetR2_2 Pin=U1-2
+Added Net: Name=NetR2_2
+Added Pin To Net: NetName=NetR3_2 Pin=R3-2
+Added Pin To Net: NetName=NetR3_2 Pin=U1-10
+Added Net: Name=NetR3_2
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=NetR4_2 Pin=U2-10
+Added Net: Name=NetR4_2
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=U1-6
+Added Net: Name=NetR5_2
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=U2-6
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR7_2 Pin=R7-2
+Added Pin To Net: NetName=NetR7_2 Pin=U1-13
+Added Net: Name=NetR7_2
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=U2-13
+Added Net: Name=NetR8_2
+Added Member To Class: ClassName=Motor driver Member=Component C1 4.7u
+Added Member To Class: ClassName=Motor driver Member=Component C2 4.7u
+Added Member To Class: ClassName=Motor driver Member=Component C3 100n
+Added Member To Class: ClassName=Motor driver Member=Component C4 100n
+Added Member To Class: ClassName=Motor driver Member=Component C5 100n
+Added Member To Class: ClassName=Motor driver Member=Component C6 100n
+Added Member To Class: ClassName=Motor driver Member=Component C7 15p
+Added Member To Class: ClassName=Motor driver Member=Component C8 15p
+Added Member To Class: ClassName=Motor driver Member=Component R1 2k
+Added Member To Class: ClassName=Motor driver Member=Component R2 22R
+Added Member To Class: ClassName=Motor driver Member=Component R3 22R
+Added Member To Class: ClassName=Motor driver Member=Component R4 22R
+Added Member To Class: ClassName=Motor driver Member=Component R5 22R
+Added Member To Class: ClassName=Motor driver Member=Component R6 22R
+Added Member To Class: ClassName=Motor driver Member=Component R7 22R
+Added Member To Class: ClassName=Motor driver Member=Component R8 22R
+Added Member To Class: ClassName=Motor driver Member=Component U1 BTM9011EPXUMA1
+Added Member To Class: ClassName=Motor driver Member=Component U2 BTM9011EPXUMA1

@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=7.4V Pin=P102-1
+Added Pin To Net: NetName=BAT_+ Pin=P102-1

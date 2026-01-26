@@ -1,0 +1,14 @@
+Added Component: Designator=SW300(SW-T2-3A-A-A2-M2)
+Add component (AddParameter): Name = "Case/Package"; Value = "Non-standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Adam Tech"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "SW-T2-3A-A-A2-M2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12V Pin=SW300-1
+Added Pin To Net: NetName=+12V Pin=SW300-2
+Added Pin To Net: NetName=BAT_+ Pin=SW300-3
+Added Pin To Net: NetName=BAT_+ Pin=SW300-4
+Added Member To Class: ClassName=Power Member=Component SW300 SW-T2-3A-A-A2-M2

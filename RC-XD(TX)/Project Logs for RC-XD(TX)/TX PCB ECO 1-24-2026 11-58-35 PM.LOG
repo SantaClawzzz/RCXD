@@ -1,8 +1,0 @@
-Removed Pin From Net: NetName=PB9 Pin=P?-1
-Removed Pin From Net: NetName=PB5 Pin=P?-3
-Removed Pin From Net: NetName=D_SDA Pin=P?-4
-Removed Pin From Net: NetName=D_SCL Pin=P?-5
-Added Pin To Net: NetName=PB5 Pin=P?-1
-Added Pin To Net: NetName=D_SDA Pin=P?-3
-Added Pin To Net: NetName=D_SCL Pin=P?-4
-Added Pin To Net: NetName=PB9 Pin=P?-5

@@ -1,0 +1,4 @@
+Change Component DesignItemId : Designator=P1 Old DesignItemId=CMP-ROOT-00728-1 New DesignItemId=CMP-ROOT-00728-2
+Change Component Footprint: Designator=P1 Old Footprint=B5B-PH-K-S(LF)(SN) New Footprint=B5B-PH-K-S(LF)(SN)
+Change Component Comment : Designator=P1 Old Comment=S2B-PH-K-S New Comment=S2B-PH-K-S(LF)(SN)
+Change Managed Component Library Link : Designator=P1 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=a820c044-79d7-404c-80d7-34a43e8c8c1c New ItemGUID=a820c044-79d7-404c-80d7-34a43e8c8c1c Old RevisionGUID=bbfb7f2c-07c2-44fa-9074-7932546fc62e New RevisionGUID=730f2a6b-0bfa-477b-b9f5-a41d55ccbb8f

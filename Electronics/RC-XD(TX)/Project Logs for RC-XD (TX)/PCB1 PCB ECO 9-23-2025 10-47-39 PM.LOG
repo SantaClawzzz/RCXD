@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=T_CS Pin=U2-29
+Removed Pin From Net: NetName=D_SCK Pin=U2-30
+Removed Pin From Net: NetName=D_SDI Pin=U2-31
+Added Pin To Net: NetName=D_SDI Pin=U2-29
+Added Pin To Net: NetName=T_CS Pin=U2-30
+Added Pin To Net: NetName=D_SCK Pin=U2-31

@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=PB5 Pin=P?-4
-Removed Pin From Net: NetName=PB6 Pin=P?-5
-Added Pin To Net: NetName=PB6 Pin=P?-4
-Added Pin To Net: NetName=PB5 Pin=P?-5
-Added Member To Class: ClassName=TX Member=Component P? 61300511121

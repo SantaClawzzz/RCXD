@@ -1,0 +1,249 @@
+{COMPONENT PROTEL.PCB
+  {ENVIRONMENT PROTEL.SCH}
+  {DETAIL
+    {SUBCOMP
+      {I MLCC_0805_M.PRT C300
+        {CN
+        1 NetC300_1
+        2 NetC300_2
+        }
+      }
+      {I A768MS107M1JLAE027-Footprint-1.PRT C301
+        {CN
+        1 GND
+        2 +12V
+        }
+      }
+      {I MLCC_0805_M.PRT C302
+        {CN
+        1 GND
+        2 +12V
+        }
+      }
+      {I A768MS107M1JLAE027-Footprint-1.PRT C303
+        {CN
+        1 GND
+        2 +5V
+        }
+      }
+      {I MLCC_0805_M.PRT C304
+        {CN
+        1 GND
+        2 +3V3
+        }
+      }
+      {I MLCC_0805_M.PRT C305
+        {CN
+        1 GND
+        2 +3V3
+        }
+      }
+      {I SB520-E3_54-Footprint-1.PRT D300
+        {CN
+        1 +5V
+        2 NetD300_2
+        }
+      }
+      {I VS-11DQ06-Footprint-1.PRT D301
+        {CN
+        1 NetD301_1
+        2 GND
+        }
+      }
+      {I C503D-WAN-CCBEB152-Footprint-1.PRT D302
+        {CN
+        1 NetD302_1
+        2 NetD302_2
+        }
+      }
+      {I C503D-WAN-CCBEB152-Footprint-1.PRT D303
+        {CN
+        1 NetD302_1
+        2 NetD303_2
+        }
+      }
+      {I 0603 RED LED.PRT D304
+        {CN
+        1 GND
+        2 NetD304_2
+        }
+      }
+      {I 0603 RED LED.PRT D305
+        {CN
+        1 GND
+        2 NetD305_2
+        }
+      }
+      {I 0603 RED LED.PRT D306
+        {CN
+        1 GND
+        2 NetD306_2
+        }
+      }
+      {I 0603 RED LED.PRT D307
+        {CN
+        1 GND
+        2 NetD307_2
+        }
+      }
+      {I C503D-WAN-CCBEB152-Footprint-1.PRT D308
+        {CN
+        1 NetD302_1
+        2 NetD308_2
+        }
+      }
+      {I C503D-WAN-CCBEB152-Footprint-1.PRT D309
+        {CN
+        1 NetD302_1
+        2 NetD309_2
+        }
+      }
+      {I IHLP2525BDER8R2M01-Footprint-1.PRT L300
+        {CN
+        1 NetC300_2
+        2 +3V3
+        }
+      }
+      {I MPX1D1770L101-Footprint-1.PRT L301
+        {CN
+        1 NetD301_1
+        2 NetD300_2
+        }
+      }
+      {I B5B-PH-K-S(LF)(SN).PRT P300
+        {CN
+        1 BAT_+
+        2 GND
+        }
+      }
+      {I SOT-23-3.PRT Q300
+        {CN
+        1 NetQ300_1
+        2 NetD302_1
+        3 GND
+        }
+      }
+      {I SOT-23-3.PRT Q301
+        {CN
+        1 NetQ301_1
+        2 NetQ300_1
+        3 GND
+        }
+      }
+      {I Resistor_0603_M.PRT R300
+        {CN
+        1 NetR300_1
+        2 +3V3
+        }
+      }
+      {I Resistor_0603_M.PRT R301
+        {CN
+        1 GND
+        2 NetR300_1
+        }
+      }
+      {I Resistor_0603_M.PRT R302
+        {CN
+        1 +5V
+        2 NetD302_2
+        }
+      }
+      {I Resistor_0603_M.PRT R303
+        {CN
+        1 NetQ300_1
+        2 +5V
+        }
+      }
+      {I Resistor_0603_M.PRT R304
+        {CN
+        1 NetR304_1
+        2 +12V
+        }
+      }
+      {I Resistor_0603_M.PRT R305
+        {CN
+        1 +5V
+        2 NetD306_2
+        }
+      }
+      {I Resistor_0603_M.PRT R306
+        {CN
+        1 +3V3
+        2 NetD307_2
+        }
+      }
+      {I Resistor_0603_M.PRT R307
+        {CN
+        1 DBG_LED
+        2 NetD304_2
+        }
+      }
+      {I Resistor_0603_M.PRT R308
+        {CN
+        1 NetR304_1
+        2 NetD305_2
+        }
+      }
+      {I Resistor_0603_M.PRT R309
+        {CN
+        1 +5V
+        2 NetD303_2
+        }
+      }
+      {I Resistor_0603_M.PRT R310
+        {CN
+        1 GND
+        2 NetR304_1
+        }
+      }
+      {I Resistor_0603_M.PRT R311
+        {CN
+        1 +5V
+        2 NetD308_2
+        }
+      }
+      {I Resistor_0603_M.PRT R312
+        {CN
+        1 FRONT_LED
+        2 NetQ301_1
+        }
+      }
+      {I Resistor_0603_M.PRT R313
+        {CN
+        1 +5V
+        2 NetD309_2
+        }
+      }
+      {I FP-JS202011CQN-MFG.PRT SW300
+        {CN
+        1 NetSW300_1
+        2 BAT_+
+        3 +12V
+        4 NetSW300_4
+        5 BAT_+
+        6 +12V
+        }
+      }
+      {I TSOT26.PRT U300
+        {CN
+        1 NetC300_1
+        2 GND
+        3 NetR300_1
+        4 +12V
+        5 +12V
+        6 NetC300_2
+        }
+      }
+      {I FP-TO263-5LD-PL-1-MFG.PRT U301
+        {CN
+        1 +12V
+        2 NetD301_1
+        3 GND
+        4 NetD300_2
+        5 GND
+        6 GND
+        }
+      }
+    }
+  }
+}

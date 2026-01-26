@@ -1,0 +1,39 @@
+Removed Pin From Net: NetName=GND Pin=J400-1
+Removed Pin From Net: NetName=GND Pin=J400-2
+Removed Pin From Net: NetName=GND Pin=J400-3
+Removed Pin From Net: NetName=GND Pin=J400-4
+Added Component: Designator=C407(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 1n, 10%, 50V, X5R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R407(Resistor_1206_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "1206"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "1M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C407-1
+Added Pin To Net: NetName=GND Pin=R407-2
+Added Pin To Net: NetName=NetC407_2 Pin=C407-2
+Added Pin To Net: NetName=NetC407_2 Pin=J400-1
+Added Pin To Net: NetName=NetC407_2 Pin=J400-2
+Added Pin To Net: NetName=NetC407_2 Pin=J400-3
+Added Pin To Net: NetName=NetC407_2 Pin=J400-4
+Added Pin To Net: NetName=NetC407_2 Pin=R407-1
+Added Net: Name=NetC407_2
+Added Member To Class: ClassName=MCU and USB-C Member=Component C407 1n
+Added Member To Class: ClassName=MCU and USB-C Member=Component R407 1M

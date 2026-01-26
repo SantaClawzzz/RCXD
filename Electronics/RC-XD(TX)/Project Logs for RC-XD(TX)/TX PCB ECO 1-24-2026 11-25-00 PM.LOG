@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=7.4V Pin=SW101-5
+Removed Pin From Net: NetName=BAT_+ Pin=SW101-6
+Change Component DesignItemId : Designator=SW101 Old DesignItemId=CMP-ROOT-01260-2 New DesignItemId=CMP-ROOT-01260-3
+Change Managed Component Library Link : Designator=SW101 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=fe4ce1f9-e534-4d35-a5af-f65c29a70f96 New ItemGUID=fe4ce1f9-e534-4d35-a5af-f65c29a70f96 Old RevisionGUID=8a16a7d3-eeef-4938-aa33-45df787aec3f New RevisionGUID=4c261488-161f-4fee-9053-87dcff8e9b8c
+Added Pin To Net: NetName=BAT_+ Pin=SW101-5
+Added Pin To Net: NetName=7.4V Pin=SW101-6

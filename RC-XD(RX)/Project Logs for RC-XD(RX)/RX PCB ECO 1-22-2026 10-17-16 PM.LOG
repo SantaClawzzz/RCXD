@@ -1,4 +1,0 @@
-Removed Pin From Net: NetName=HE1_B Pin=U400-12
-Removed Pin From Net: NetName=HE1_A Pin=U400-13
-Added Pin To Net: NetName=HE1_A Pin=U400-12
-Added Pin To Net: NetName=HE1_B Pin=U400-13

@@ -1,0 +1,24 @@
+Change Component Footprint: Designator=D400 Old Footprint=FP-SMA-MFG New Footprint=FP-MBR1020VL_R1_00001-MFG
+Change Component Comment : Designator=D400 Old Comment=SBR3U20SA-13 New Comment=MBR1020VL_R1_00001
+Change Managed Component Library Link : Designator=D400 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=6ed7ab20-6bef-4e98-82f0-a2adabdee131 New ItemGUID=38352e03-0855-491f-8483-1271ca9c0772 Old RevisionGUID=af95152d-07c6-40d6-8cc0-94f6fd8148e0 New RevisionGUID=ec1ed082-ee74-4aa8-9fe6-9b8faabb9b2e
+Change component parameters: Designator = "D400" ("D400"); Footprint = "FP-SMA-MFG"; UniqueID = "\AWCWYNSX\WQZTKVNC" ("\AWCWYNSX\WQZTKVNC")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "SOD-123FL"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Forward Current"; Value = "1A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Panjit"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Forward Surge Current (Ifsm)"; Value = "45A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Junction Temperature (Tj)"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Output current"; Value = "1A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Max Repetitive Reverse Voltage (Vrrm)"; Value = "20V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Elements"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Terminals"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "MBR1020VL_R1_00001"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Peak Reverse Current"; Value = "600µA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "No"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Reverse Standoff Voltage"; Value = "20V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
