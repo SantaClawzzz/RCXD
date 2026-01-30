@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=SERVO Pin=P503-3
+Added Pin To Net: NetName=SWCLK Pin=P504-2
+Added Pin To Net: NetName=SWDIO Pin=P504-3

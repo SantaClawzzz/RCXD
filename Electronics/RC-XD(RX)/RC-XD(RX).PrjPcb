@@ -90,7 +90,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=6
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -262,32 +262,32 @@ DocumentPath=Project Outputs for RC-XD(RX)\Power.NET
 DItemRevisionGUID=
 
 [Parameter1]
-Name=GlobalRevisionEngineer
-Value=Robin Madar
+Name=GlobalAddress
+Value=Tallinn
 
 [Parameter2]
-Name=GlobalRevisionDate
-Value=2026-1-26
+Name=GlobalAddress2
+Value=Harju maakond
 
 [Parameter3]
-Name=GlobalProjectTitleAbr
-Value=RX_PCB
+Name=GlobalProjectRevision
+Value=v1.2
 
 [Parameter4]
 Name=GlobalProjectTitle
 Value=RC-XD
 
 [Parameter5]
-Name=GlobalProjectRevision
-Value=v1.2
+Name=GlobalProjectTitleAbr
+Value=RX_PCB
 
 [Parameter6]
-Name=GlobalAddress2
-Value=Harju maakond
+Name=GlobalRevisionDate
+Value=2026-1-26
 
 [Parameter7]
-Name=GlobalAddress
-Value=Tallinn
+Name=GlobalRevisionEngineer
+Value=Robin Madar
 
 [Configuration1]
 Name=Sources

@@ -1,0 +1,86 @@
+Removed Pin From Net: NetName=HE2_B Pin=P501-1
+Removed Pin From Net: NetName=HE2_A Pin=P501-2
+Removed Pin From Net: NetName=+12V Pin=P501-3
+Removed Pin From Net: NetName=GND Pin=P501-4
+Removed Pin From Net: NetName=M2_P Pin=P501-5
+Removed Pin From Net: NetName=M2_N Pin=P501-6
+Removed Pin From Net: NetName=HE1_B Pin=P502-1
+Removed Pin From Net: NetName=HE1_A Pin=P502-2
+Removed Pin From Net: NetName=+12V Pin=P502-3
+Removed Pin From Net: NetName=GND Pin=P502-4
+Removed Pin From Net: NetName=M1_P Pin=P502-5
+Removed Pin From Net: NetName=M1_N Pin=P502-6
+Removed Member From Class: ClassName=Headers and Connectors Member=P501
+Removed Member From Class: ClassName=Headers and Connectors Member=P502
+Added Component: Designator=J503(0878310641)
+Add component (AddParameter): Name = "China RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Export Control Classification Number (ECCN) Code"; Value = "EAR99"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Harmonized Tariff Schedule (HTS) Code"; Value = "8536.69.40.40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "1GO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Introduction Date"; Value = "2014-01-28"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Lifecycle Status"; Value = "ACTIVE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Force"; Value = "1.9N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "0878310641"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Plating Thickness"; Value = "762nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schedule B"; Value = "8536694040, 8536694040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Pitch"; Value = "2mm"; VariantName = "[No Variations]"
+Added Component: Designator=J504(0878310641)
+Add component (AddParameter): Name = "China RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Gender"; Value = "Male"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current Rating"; Value = "2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric Material"; Value = "Polyamide"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Export Control Classification Number (ECCN) Code"; Value = "EAR99"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Harmonized Tariff Schedule (HTS) Code"; Value = "8536.69.40.40"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation Resistance"; Value = "1GO"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Introduction Date"; Value = "2014-01-28"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Lifecycle Status"; Value = "ACTIVE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "105°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Circuits"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Rows"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Force"; Value = "1.9N"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Orientation"; Value = "Vertical"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "0878310641"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Plating Thickness"; Value = "762nm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Row Spacing"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Schedule B"; Value = "8536694040, 8536694040"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Terminal Pitch"; Value = "2mm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=M2_P Pin=J503-1
+Added Pin To Net: NetName=GND Pin=J503-2
+Added Pin To Net: NetName=M2_N Pin=J503-3
+Added Pin To Net: NetName=HE2_B Pin=J503-4
+Added Pin To Net: NetName=+12V Pin=J503-5
+Added Pin To Net: NetName=HE2_A Pin=J503-6
+Added Pin To Net: NetName=M1_P Pin=J504-1
+Added Pin To Net: NetName=GND Pin=J504-2
+Added Pin To Net: NetName=M1_N Pin=J504-3
+Added Pin To Net: NetName=HE1_B Pin=J504-4
+Added Pin To Net: NetName=+12V Pin=J504-5
+Added Pin To Net: NetName=HE1_A Pin=J504-6
+Added Member To Class: ClassName=Headers and Connectors Member=Component J503 0878310641
+Added Member To Class: ClassName=Headers and Connectors Member=Component J504 0878310641

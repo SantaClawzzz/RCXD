@@ -105,32 +105,32 @@ DocumentPath=Project Outputs for RC-XD(TX)\Design Rule Check - TX.html
 DItemRevisionGUID=
 
 [Parameter1]
-Name=GlobalRevisionEngineer
-Value=Robin Madar
+Name=GlobalAddress
+Value=Tallinn
 
 [Parameter2]
-Name=GlobalRevisionDate
-Value=2026-1-26
+Name=GlobalAddress2
+Value=Harju maakond
 
 [Parameter3]
-Name=GlobalProjectTitleAbr
-Value=TX_PCB
+Name=GlobalProjectRevision
+Value=v1.2
 
 [Parameter4]
 Name=GlobalProjectTitle
 Value=RC-XD
 
 [Parameter5]
-Name=GlobalProjectRevision
-Value=v1.2
+Name=GlobalProjectTitleAbr
+Value=TX_PCB
 
 [Parameter6]
-Name=GlobalAddress2
-Value=Harju maakond
+Name=GlobalRevisionDate
+Value=2026-1-26
 
 [Parameter7]
-Name=GlobalAddress
-Value=Tallinn
+Name=GlobalRevisionEngineer
+Value=Robin Madar
 
 [Configuration1]
 Name=Sources

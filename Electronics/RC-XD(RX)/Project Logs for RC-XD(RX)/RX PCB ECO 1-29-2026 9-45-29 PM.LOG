@@ -1,0 +1,59 @@
+Removed Pin From Net: NetName=+3V3 Pin=P400-1
+Removed Pin From Net: NetName=BOOT0 Pin=P400-2
+Removed Pin From Net: NetName=GND Pin=P504-1
+Removed Pin From Net: NetName=SWCLK Pin=P504-2
+Removed Pin From Net: NetName=+3V3 Pin=P504-4
+Removed Pin From Net: NetName=GND Pin=R408-1
+Removed Pin From Net: NetName=BOOT0 Pin=R408-2
+Removed Member From Class: ClassName=MCU and USB-C Member=P400
+Removed Member From Class: ClassName=MCU and USB-C Member=R408
+Change Component Footprint: Designator=P504 Old Footprint=4Pos Pin Header Vertical New Footprint=61300511121
+Change Component Comment : Designator=P504 Old Comment=PH1-04-UA New Comment=61300511121
+Change Managed Component Library Link : Designator=P504 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=956e40a5-171c-4520-a595-5fa66320aad2 New ItemGUID=bad2c7ab-fd4c-40f3-8104-257897d6ea0e Old RevisionGUID=f14acd5f-ae5e-43f9-928d-46c4c9e6f36b New RevisionGUID=e950e895-d6ba-4eae-ada3-ba5a4aac47ab
+Change component parameters: Designator = "P504" ("P504"); Footprint = "4Pos Pin Header Vertical"; UniqueID = "\JLZWFEPE\GTQZKNGQ" ("\JLZWFEPE\GTQZKNGQ")
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Wurth"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "61300511121"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Added Component: Designator=P505(61300511121)
+Add component (AddParameter): Name = "Manufacturer"; Value = "Wurth"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "61300511121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Added Component: Designator=R501(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 10k, =5%, =1/16W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=P504-1
+Added Pin To Net: NetName=BOOT0 Pin=P504-2
+Added Pin To Net: NetName=SWCLK Pin=P504-4
+Added Pin To Net: NetName=GND Pin=P504-5
+Added Pin To Net: NetName=GND Pin=R501-1
+Added Pin To Net: NetName=BOOT0 Pin=R501-2
+Added Pin To Net: NetName=PA15 Pin=P505-5
+Added Pin To Net: NetName=PA15 Pin=U400-38
+Added Net: Name=PA15
+Added Pin To Net: NetName=PB3 Pin=P505-1
+Added Pin To Net: NetName=PB3 Pin=U400-39
+Added Net: Name=PB3
+Added Pin To Net: NetName=PB4 Pin=P505-2
+Added Pin To Net: NetName=PB4 Pin=U400-40
+Added Net: Name=PB4
+Added Pin To Net: NetName=PB5 Pin=P505-3
+Added Pin To Net: NetName=PB5 Pin=U400-41
+Added Net: Name=PB5
+Added Pin To Net: NetName=PB6 Pin=P505-4
+Added Pin To Net: NetName=PB6 Pin=U400-42
+Added Net: Name=PB6
+Added Member To Class: ClassName=Headers and Connectors Member=Component P505 61300511121
+Added Member To Class: ClassName=Headers and Connectors Member=Component R501 10k
