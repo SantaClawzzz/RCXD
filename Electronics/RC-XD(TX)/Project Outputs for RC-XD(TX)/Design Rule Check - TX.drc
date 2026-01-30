@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\Public\Documents\Altium\RC-XD\RC-XD(TX)\TX.PcbDoc
-Date     : 1/26/2026
-Time     : 10:25:22 AM
+PCB File : C:\Users\Public\Documents\Altium\RC-XD\Electronics\RC-XD(TX)\TX.PcbDoc
+Date     : 1/30/2026
+Time     : 6:15:53 PM
 
 Processing Rule : Clearance Constraint (Gap=0mm) (All),((AsMM(HoleDiameter)=1) AND (AsMM(PadXSize_AllLayers)=0))
 Rule Violations :0

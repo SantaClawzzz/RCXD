@@ -1,0 +1,85 @@
+Removed Pin From Net: NetName=RF_DATA Pin=U101-3
+Added Component: Designator=C120(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 50V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=C121(MLCC_0603_M)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Dielectric"; Value = "X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "MLCC, 0603, 100n, 10%, 50V, X7R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "100nF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R121(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 22R, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "22"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R122(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 4.7k, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R123(Resistor_0603_M)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 4.7k, 1%, 1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4,7k"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C120-1
+Added Pin To Net: NetName=3V3 Pin=C120-2
+Added Pin To Net: NetName=GND Pin=C121-1
+Added Pin To Net: NetName=3V3 Pin=C121-2
+Added Pin To Net: NetName=RF_DATA Pin=R121-2
+Added Pin To Net: NetName=D_SDA Pin=R122-1
+Added Pin To Net: NetName=3V3 Pin=R122-2
+Added Pin To Net: NetName=D_SCL Pin=R123-1
+Added Pin To Net: NetName=3V3 Pin=R123-2
+Added Pin To Net: NetName=J_GND Pin=S100-S1
+Added Pin To Net: NetName=NetR121_1 Pin=R121-1
+Added Pin To Net: NetName=NetR121_1 Pin=U101-3
+Added Net: Name=NetR121_1
+Added Pin To Net: NetName=SWCLK Pin=P100-7
+Added Pin To Net: NetName=SWCLK Pin=U100-37
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=P100-5
+Added Pin To Net: NetName=SWDIO Pin=U100-34
+Added Net: Name=SWDIO
+Added Member To Class: ClassName=TX Member=Component C120 100n
+Added Member To Class: ClassName=TX Member=Component C121 100n
+Added Member To Class: ClassName=TX Member=Component R121 22R
+Added Member To Class: ClassName=TX Member=Component R122 4.7k
+Added Member To Class: ClassName=TX Member=Component R123 4.7k
