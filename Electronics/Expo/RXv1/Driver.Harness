@@ -1,0 +1,2 @@
+Driver Control=SDI,SDO,SCK,CS,IS1,IS2
+Motors=M1_P,M1_N,M2_P,M2_N

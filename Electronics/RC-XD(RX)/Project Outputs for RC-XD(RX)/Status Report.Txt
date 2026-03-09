@@ -1,10 +1,26 @@
-Output: PCAD Netlist
-Type  : PCADNetlist
-From  : Project [RC-XD(RX).PrjPcb]
-   Generated File[Power.NET]
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [RC-XD(RX).PrjPcb]
+   Generated File[RX_Copper_Signal_Top.gbr]
+   Generated File[RX_Copper_Signal_1.gbr]
+   Generated File[RX_Copper_Signal_2.gbr]
+   Generated File[RX_Copper_Signal_Bot.gbr]
+   Generated File[RX_Legend_Top.gbr]
+   Generated File[RX_Legend_Bot.gbr]
+   Generated File[RX_Soldermask_Top.gbr]
+   Generated File[RX_Soldermask_Bot.gbr]
+   Generated File[RX_Paste_Top.gbr]
+   Generated File[RX_Paste_Bot.gbr]
+   Generated File[RX_Profile.gbr]
+   Generated File[RX_NPTH_Drill.gbr]
+   Generated File[RX_PTH_Drill.gbr]
+   Generated File[RX_Drawing_1.gbr]
+   Generated File[RX_Drillmap_1.gbr]
+   Generated File[RX.EXTREP]
+   Generated File[RX.REP]
 
 
-Files Generated   : 1
+Files Generated   : 17
 Documents Printed : 0
 
-Finished Output Generation At 9:55:29 PM On 1/10/2026
+Finished Output Generation At 2:08:38 AM On 3/9/2026

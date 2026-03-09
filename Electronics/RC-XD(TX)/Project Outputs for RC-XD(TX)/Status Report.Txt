@@ -1,0 +1,33 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [RC-XD(TX).PrjPcb]
+   Generated File[TX_Copper_Signal_Top.gbr]
+   Generated File[TX_Copper_Signal_1.gbr]
+   Generated File[TX_Copper_Signal_2.gbr]
+   Generated File[TX_Copper_Signal_Bot.gbr]
+   Generated File[TX_Pads_Bot.gbr]
+   Generated File[TX_Pads_Top.gbr]
+   Generated File[TX_Legend_Top.gbr]
+   Generated File[TX_Legend_Bot.gbr]
+   Generated File[TX_Soldermask_Top.gbr]
+   Generated File[TX_Soldermask_Bot.gbr]
+   Generated File[TX_Paste_Top.gbr]
+   Generated File[TX_Paste_Bot.gbr]
+   Generated File[TX_Keep-out.gbr]
+   Generated File[TX_Mechanical_1.gbr]
+   Generated File[TX_Route_Tool_Path.gbr]
+   Generated File[TX_Mechanical_13.gbr]
+   Generated File[TX_Mechanical_15.gbr]
+   Generated File[TX_Profile.gbr]
+   Generated File[TX_NPTH_Drill.gbr]
+   Generated File[TX_PTH_Drill.gbr]
+   Generated File[TX_Drawing_1.gbr]
+   Generated File[TX_Drillmap_1.gbr]
+   Generated File[TX.EXTREP]
+   Generated File[TX.REP]
+
+
+Files Generated   : 24
+Documents Printed : 0
+
+Finished Output Generation At 3:43:24 PM On 1/31/2026

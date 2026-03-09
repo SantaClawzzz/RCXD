@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GND Pin=C204-2
+Removed Pin From Net: NetName=GND Pin=C205-2
+Removed Member From Class: ClassName=Motor driver Member=C204
+Removed Member From Class: ClassName=Motor driver Member=C205
+Removed Member From Class: ClassName=Motor driver Member=R206
+Removed Member From Class: ClassName=Motor driver Member=R207
