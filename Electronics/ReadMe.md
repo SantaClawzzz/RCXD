@@ -21,14 +21,17 @@ Buttons and joystick are routed to IDC headers which are easier to crimp by hand
 
 Design is done with panelization in mind, so not every switch and joystick has to be ordered separately.
 
-* MCU - [STM32F103Cx](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)
+* MCU - [STM32F103C6](/Electronics/Datasheets/stm32f103c6.pdf)
+* Backup MCU [STM32F103C8](/Electronics/Datasheets/stm32f103c8.pdf)
+* USB-UART chip [HT42B534-2](/Electronics/Datasheets/HT42B534-xv130.pdf)
 * Battery - 7.4V [TBA]()
 * Regulators:
-  * [3V3 LDO](https://www.digikey.ee/en/products/detail/umw/AMS1117-3-3/17635254)
-  * [5V LDO](https://www.digikey.ee/en/products/detail/evvo/ams1117-5-0/24370130)
-* USB-C - [THT variant](https://www.mouser.com/catalog/specsheets/GCT_usb4085.pdf?_gl=1*15nugvh*_gcl_aw*R0NMLjE3Njg0MTMyNTIuQ2p3S0NBaUFtcDNMQmhBa0Vpd0FKTTJKVU44WDVSWVA4amZXTDBjeFJhZEJOdjlhMVdXcWZKU0NzN3hBcUdXb3V4eG5vY1Ayekc4ZEVCb0NtUHdRQXZEX0J3RQ..*_gcl_au*OTU4NjA5MDM5LjE3NjM5MTExODMuOTEwNDEwNzc4LjE3Njc0NjY5ODAuMTc2NzQ2Njk4MA..*_ga*MTEzMzQ4OTA2Ny4xNzYxNzQ3MjEz*_ga_15W4STQT4T*czE3Njg0MTIyODMkbzEzJGcxJHQxNzY4NDEzMjUyJGo1NyRsMCRoMA..)
-* [Button](https://www.digikey.ee/en/products/detail/e-switch/tl2201eexb/1805495)
-* [Joystick](https://www.digikey.ee/en/products/detail/c-k/thb001p/11687191)
+  * [3V3 LDO](/Electronics/Datasheets/AMS1117.pdf)
+  * [5V LDO](/Electronics/Datasheets/AMS1117-5.0.pdf)
+* [USB-C](/Electronics/Datasheets/GCT_usb4085.pdf)
+* [Button](/Electronics/Datasheets/TL2201.pdf)
+* [Joystick](/Electronics/Datasheets/thb001p.pdf)
+* [FS1000A](/Electronics/Datasheets/FS1000A_webpage.pdf) and the [module](/Electronics/Datasheets/433%20MHz%20RF%20Transmitter%20Module_0.pdf)
 
 ## Mechanical parameters:
   * 34.5mm x 80mm
@@ -75,12 +78,14 @@ So with the BTM chip we gain:
   * Does what we actually want
   * Also it has current sensing and should have under- and overvoltage protection with current/stall protection
 
-* MCU - [STM32F103Cx](https://www.st.com/resource/en/datasheet/stm32f103c8.pdf)
-* Driver - [BTM9011](https://www.infineon.com/assets/row/public/documents/10/49/infineon-infineon-btm901xep-ds-en-datasheet-en.pdf?fileId=8ac78c8c90530b3a01912d365ee4326f)
+* MCU - [STM32F103C6](/Electronics/Datasheets/stm32f103c6.pdf)
+* Backup MCU - [STM32F103C8](/Electronics/Datasheets/stm32f103c8.pdf)
+* USB-UART chip [HT42B534-2](/Electronics/Datasheets/HT42B534-xv130.pdf)
+* Driver - [BTM9011](/Electronics/Datasheets/BTM901xep.pdf)
 * Battery - 12V [TBA]()
 * Motors - [Pololu 4842](https://www.pololu.com/product/4842)
-* Regulators - [5V buck](https://www.mouser.com/catalog/specsheets/Renesas_01042024_REN_RAA211803-805_DST_20231002.pdf?_gl=1*10scs8a*_gcl_aw*R0NMLjE3NjgzOTA2NDEuQ2p3S0NBaUFtcDNMQmhBa0Vpd0FKTTJKVURzUk9TUXQxWmpXRGZkQ1J0RVJScEJabmRhX29NOGs4aXY4aWNjLXpVYzYyaE90TGw0a3Z4b0NjNW9RQXZEX0J3RQ..*_gcl_au*MTU4MDkwODY2NS4xNzY1MTg3OTk1LjEzODYxMzQwMDIuMTc2ODQwMDAxNi4xNzY4NDAxMDQy*_ga*MTA4Mzc2NDMyOC4xNzU5OTE3NDM2*_ga_15W4STQT4T*czE3Njg0MTMxMzgkbzMyJGcxJHQxNzY4NDEzMTQyJGo1NiRsMCRoMA..) and [3V3 buck](https://www.mouser.com/catalog/specsheets/Renesas_01042024_REN_RAA211803-805_DST_20231002.pdf?_gl=1*14azvdg*_gcl_aw*R0NMLjE3NjgzOTA2NDEuQ2p3S0NBaUFtcDNMQmhBa0Vpd0FKTTJKVURzUk9TUXQxWmpXRGZkQ1J0RVJScEJabmRhX29NOGs4aXY4aWNjLXpVYzYyaE90TGw0a3Z4b0NjNW9RQXZEX0J3RQ..*_gcl_au*MTU4MDkwODY2NS4xNzY1MTg3OTk1LjEzODYxMzQwMDIuMTc2ODQwMDAxNi4xNzY4NDAxMDQy*_ga*MTA4Mzc2NDMyOC4xNzU5OTE3NDM2*_ga_15W4STQT4T*czE3Njg0MTMxMzgkbzMyJGcxJHQxNzY4NDEzMTY0JGozNCRsMCRoMA..)
-* USB-C - [THT variant](https://www.mouser.com/catalog/specsheets/GCT_usb4085.pdf?_gl=1*15nugvh*_gcl_aw*R0NMLjE3Njg0MTMyNTIuQ2p3S0NBaUFtcDNMQmhBa0Vpd0FKTTJKVU44WDVSWVA4amZXTDBjeFJhZEJOdjlhMVdXcWZKU0NzN3hBcUdXb3V4eG5vY1Ayekc4ZEVCb0NtUHdRQXZEX0J3RQ..*_gcl_au*OTU4NjA5MDM5LjE3NjM5MTExODMuOTEwNDEwNzc4LjE3Njc0NjY5ODAuMTc2NzQ2Njk4MA..*_ga*MTEzMzQ4OTA2Ny4xNzYxNzQ3MjEz*_ga_15W4STQT4T*czE3Njg0MTIyODMkbzEzJGcxJHQxNzY4NDEzMjUyJGo1NyRsMCRoMA..)
+* Regulators - [5V buck](/Electronics/Datasheets/REN_RAA211803.pdf) and [3V3 LDO](/Electronics/Datasheets/NCP115-D.pdf)
+* USB-C - [THT variant](/Electronics/Datasheets/GCT_usb4085.pdf)
 
 * Includes headers for:
   * 3x [TOF](https://www.pololu.com/product/3415) sensors (I2C)
