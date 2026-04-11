@@ -1,6 +1,6 @@
 Core/Src/ssd1306.o: ../Core/Src/ssd1306.c \
- C:/Users/RobinMadar/OneDrive\ -\ Krakul\ OÜ/Documents/Projects/STM/RX_C8/Includes/ssd1306/ssd1306.h \
- C:/Users/RobinMadar/OneDrive\ -\ Krakul\ OÜ/Documents/Projects/STM/RX_C8/Includes/ssd1306/ssd1306_conf.h \
+ C:/Users/Public/Documents/Altium/RC-XD/Software/RX_C8/Includes/ssd1306/ssd1306.h \
+ C:/Users/Public/Documents/Altium/RC-XD/Software/RX_C8/Includes/ssd1306/ssd1306_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  ../Core/Inc/stm32f1xx_hal_conf.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -24,9 +24,12 @@ Core/Src/ssd1306.o: ../Core/Src/ssd1306.c \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
- ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h
-C:/Users/RobinMadar/OneDrive\ -\ Krakul\ OÜ/Documents/Projects/STM/RX_C8/Includes/ssd1306/ssd1306.h:
-C:/Users/RobinMadar/OneDrive\ -\ Krakul\ OÜ/Documents/Projects/STM/RX_C8/Includes/ssd1306/ssd1306_conf.h:
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
+ ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+C:/Users/Public/Documents/Altium/RC-XD/Software/RX_C8/Includes/ssd1306/ssd1306.h:
+C:/Users/Public/Documents/Altium/RC-XD/Software/RX_C8/Includes/ssd1306/ssd1306_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h:
@@ -51,3 +54,6 @@ C:/Users/RobinMadar/OneDrive\ -\ Krakul\ OÜ/Documents/Projects/STM/RX_C8/Includ
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
+../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h:

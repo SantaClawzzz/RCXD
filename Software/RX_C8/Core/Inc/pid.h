@@ -1,6 +1,8 @@
 #ifndef __PID_H
 #define __PID_H
 
+#include <stdint.h>
+
 #ifdef __cplusplus
 extern "C" {
 #endif

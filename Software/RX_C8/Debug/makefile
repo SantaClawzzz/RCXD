@@ -52,6 +52,9 @@ default.size.stdout \
 OBJDUMP_LIST += \
 RX_C8.list \
 
+OBJCOPY_BIN += \
+RX_C8.bin \
+
 
 # All Target
 all: main-build
@@ -60,8 +63,8 @@ all: main-build
 main-build: RX_C8.elf secondary-outputs
 
 # Tool invocations
-RX_C8.elf RX_C8.map: $(OBJS) $(USER_OBJS) C:\Users\RobinMadar\OneDrive\ -\ Krakul\ OÜ\Documents\Projects\STM\RX_C8\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "RX_C8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\RobinMadar\OneDrive - Krakul OÜ\Documents\Projects\STM\RX_C8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_C8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+RX_C8.elf RX_C8.map: $(OBJS) $(USER_OBJS) C:\Users\Public\Documents\Altium\RC-XD\Software\RX_C8\STM32F103C8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "RX_C8.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m3 -T"C:\Users\Public\Documents\Altium\RC-XD\Software\RX_C8\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="RX_C8.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -75,12 +78,17 @@ RX_C8.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
+RX_C8.bin: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objcopy  -O binary $(EXECUTABLES) "RX_C8.bin"
+	@echo 'Finished building: $@'
+	@echo ' '
+
 # Other Targets
 clean:
-	-$(RM) RX_C8.elf RX_C8.list RX_C8.map default.size.stdout
+	-$(RM) RX_C8.bin RX_C8.elf RX_C8.list RX_C8.map default.size.stdout
 	-@echo ' '
 
-secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)
+secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST) $(OBJCOPY_BIN)
 
 fail-specified-linker-script-missing:
 	@echo 'Error: Cannot find the specified linker script. Check the linker settings in the build configuration.'
