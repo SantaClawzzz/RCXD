@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=DBG_LED Pin=D303-1
+Removed Pin From Net: NetName=+3V3 Pin=R303-2
+Added Pin To Net: NetName=+3V3 Pin=D303-2
+Added Pin To Net: NetName=DBG_LED Pin=R303-2
+Added Pin To Net: NetName=NetD303_1 Pin=D303-1
+Added Pin To Net: NetName=NetD303_1 Pin=R303-1
+Added Net: Name=NetD303_1

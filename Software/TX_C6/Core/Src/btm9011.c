@@ -38,13 +38,16 @@ HAL_StatusTypeDef BTM9011_Send(BTM9011_HandleTypeDef *hbtm, const uint8_t *cmds)
      * (driver 1, nearest) is latched into chip 1.
      */
 
+    /* SPI transmit, before CS is pulled high and after transmit low to latch it */
+    HAL_GPIO_WritePin(hbtm->cs_port, hbtm->cs_pin, GPIO_PIN_SET);   /* CS active */
+#ifdef HAL_SPI_MODULE_ENABLED
     uint8_t tx[BTM9011_MAX_DRIVERS];
     for (uint8_t i = 0; i < hbtm->num_drivers; i++)
         tx[i] = cmds[hbtm->num_drivers - 1 - i];
-
-    /* SPI transmit, before CS is pulled high and after transmit low to latch it */
-    HAL_GPIO_WritePin(hbtm->cs_port, hbtm->cs_pin, GPIO_PIN_SET);   /* CS active */
     HAL_StatusTypeDef status = HAL_SPI_Transmit(hbtm->hspi, tx, hbtm->num_drivers, 100);
+#else
+    HAL_StatusTypeDef status = HAL_OK;
+#endif
     HAL_Delay(1); /* Small delay */
     HAL_GPIO_WritePin(hbtm->cs_port, hbtm->cs_pin, GPIO_PIN_RESET); /* latch */
 

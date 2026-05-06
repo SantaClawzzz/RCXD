@@ -1,6 +1,6 @@
-../Core/Src/ssd1306.c:8:6:ssd1306_Reset	4	static
-../Core/Src/ssd1306.c:13:6:ssd1306_WriteCommand	32	static
-../Core/Src/ssd1306.c:18:6:ssd1306_WriteData	32	static
+../Core/Src/ssd1306.c:24:6:ssd1306_Reset	8	static
+../Core/Src/ssd1306.c:36:6:ssd1306_WriteCommand	16	static
+../Core/Src/ssd1306.c:44:6:ssd1306_WriteData	16	static
 ../Core/Src/ssd1306.c:63:17:ssd1306_FillBuffer	24	static
 ../Core/Src/ssd1306.c:73:6:ssd1306_Init	8	static
 ../Core/Src/ssd1306.c:175:6:ssd1306_Fill	16	static

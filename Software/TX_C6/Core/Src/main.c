@@ -66,7 +66,7 @@ static void MX_TIM2_Init(void);
 static void MX_ADC1_Init(void);
 /* USER CODE BEGIN PFP */
 
-
+static uint16_t ADC_ReadChannel(uint32_t channel);
 
 /* USER CODE END PFP */
 
@@ -109,57 +109,29 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_Base_Start_IT(&htim2);
-
-  RF433_Init(	&hrf, // RF handle
+  RF433_Init(	&hrf,
 				RF_DATA_GPIO_Port,      RF_DATA_Pin,		/* TX — FS1000A DATA		*/
 				PB11_GPIO_Port,  		PB11_Pin);  		/* RX — unused on TX board	*/
+
+  HAL_TIM_Base_Start_IT(&htim2);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  static const uint8_t test_pkt[] = { 0x01, 0x01 };
+  uint8_t sw_l_prev = GPIO_PIN_SET;
+
   while (1)
   {
-    /* Read joystick axes */
-    int16_t v = (int16_t)ADC_ReadChannel(ADC_CHANNEL_0) - JOY_CENTER;  /* PA0 — vertical   */
-    int16_t h = (int16_t)ADC_ReadChannel(ADC_CHANNEL_1) - JOY_CENTER;  /* PA1 — horizontal */
+    uint8_t sw_l = HAL_GPIO_ReadPin(SW_L_GPIO_Port, SW_L_Pin);
 
-    /* Apply deadzone */
-    if (v > -JOY_DEADZONE && v < JOY_DEADZONE) v = 0;
-    if (h > -JOY_DEADZONE && h < JOY_DEADZONE) h = 0;
-
-    /* Scale to -31..+31 */
-    int16_t v_spd = CLAMP31((v * 31) / JOY_RANGE);
-    int16_t h_spd = CLAMP31((h * 31) / JOY_RANGE);
-
-    /* Differential drive: left motor = V + H, right motor = V - H */
-    int16_t m1 = CLAMP31(v_spd + h_spd);
-    int16_t m2 = CLAMP31(v_spd - h_spd);
-
-    /* Read buttons — active low (pressed connects to GND) */
-    uint8_t sw_l = (HAL_GPIO_ReadPin(SW_L_GPIO_Port, SW_L_Pin) == GPIO_PIN_RESET);
-    uint8_t sw_r = (HAL_GPIO_ReadPin(SW_R_GPIO_Port, SW_R_Pin) == GPIO_PIN_RESET);
-
-    /* Buttons brake the corresponding motor
-     * Later used for I2C screen SSD1306 		*/
-    if (sw_l) m1 = 0;
-    if (sw_r) m2 = 0;
-
-    /* Convert signed speed to direction + duty */
-    BTM9011_Dir dir1 = (m1 > 0) ? BTM9011_DIR_FORWARD : (m1 < 0) ? BTM9011_DIR_REVERSE : BTM9011_DIR_COAST;
-    BTM9011_Dir dir2 = (m2 > 0) ? BTM9011_DIR_FORWARD : (m2 < 0) ? BTM9011_DIR_REVERSE : BTM9011_DIR_COAST;
-    uint8_t duty1 = (uint8_t)(m1 < 0 ? -m1 : m1);
-    uint8_t duty2 = (uint8_t)(m2 < 0 ? -m2 : m2);
-
-    /* JOY_SEL — left commented for now */
-    /* uint8_t joy_sel = (HAL_GPIO_ReadPin(JOY_SEL_GPIO_Port, JOY_SEL_Pin) == GPIO_PIN_RESET); */
-
-    uint8_t pkt[2] = {
-        BTM9011_BuildCmd(dir1, duty1),
-        BTM9011_BuildCmd(dir2, duty2),
-    };
-    RF433_Send(&hrf, pkt, 2);
+    if (sw_l == GPIO_PIN_RESET && sw_l_prev == GPIO_PIN_SET) {
+      HAL_Delay(20);
+      if (HAL_GPIO_ReadPin(SW_L_GPIO_Port, SW_L_Pin) == GPIO_PIN_RESET)
+        RF433_Send(&hrf, test_pkt, sizeof(test_pkt));
+    }
+    sw_l_prev = sw_l;
     HAL_Delay(10);
 
     /* USER CODE END WHILE */
@@ -203,12 +175,12 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV4;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
@@ -317,7 +289,7 @@ static void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim2.Init.Period = 999;
+  htim2.Init.Period = 1999;
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)

@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=+3V3 Pin=U300-4
+Removed Pin From Net: NetName=GND Pin=U300-5
+Change Component DesignItemId : Designator=U300 Old DesignItemId=CMP-00026-1 New DesignItemId=CMP-00026-2
+Change Managed Component Library Link : Designator=U300 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=c45bee51-37d5-470b-af58-cc652e5093da New ItemGUID=c45bee51-37d5-470b-af58-cc652e5093da Old RevisionGUID=45e7b50b-281d-464c-b27f-d7936e95a584 New RevisionGUID=0145badf-5648-45f6-8dbf-5f643a922102
+Added Pin To Net: NetName=GND Pin=U300-4
+Added Pin To Net: NetName=+3V3 Pin=U300-5

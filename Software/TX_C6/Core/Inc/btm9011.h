@@ -7,6 +7,10 @@ extern "C" {
 
 #include "stm32f1xx_hal.h"
 
+#ifndef HAL_SPI_MODULE_ENABLED
+typedef struct __SPI_HandleTypeDef SPI_HandleTypeDef;
+#endif
+
 /* Maximum drivers supported in one daisy chain --------------------------------*/
 #define BTM9011_MAX_DRIVERS  8U
 

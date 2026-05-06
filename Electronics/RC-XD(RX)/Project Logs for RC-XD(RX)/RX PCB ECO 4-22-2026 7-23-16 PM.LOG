@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=+3V3 Pin=D303-1
+Removed Pin From Net: NetName=DBG_LED Pin=R303-1
+Removed Pin From Net: NetName=NetD303_2 Pin=R303-2
+Change Component Comment : Designator=R302 Old Comment=100R New Comment=68R
+Change Component Comment : Designator=R303 Old Comment=200R New Comment=68R
+Change Component Comment : Designator=R301 Old Comment=200R New Comment=150R
+Change Component Comment : Designator=R300 Old Comment=680R New Comment=470R
+Change Managed Component Library Link : Designator=U401 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=68b6340c-4a7e-45a9-9d28-8da2732425c1 New ItemGUID=68b6340c-4a7e-45a9-9d28-8da2732425c1 Old RevisionGUID=7314250d-fb78-4c29-8355-b79039c05460 New RevisionGUID=21ef4a66-6929-40f8-ab36-67d848011159
+Added Pin To Net: NetName=DBG_LED Pin=D303-1
+Added Pin To Net: NetName=NetD303_2 Pin=R303-1
+Added Pin To Net: NetName=+3V3 Pin=R303-2

@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,9 +59,43 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define TOF_1_Pin GPIO_PIN_13
+#define TOF_1_GPIO_Port GPIOC
+#define TOF_2_Pin GPIO_PIN_14
+#define TOF_2_GPIO_Port GPIOC
+#define TOF_3_Pin GPIO_PIN_15
+#define TOF_3_GPIO_Port GPIOC
+#define HE2_B_Pin GPIO_PIN_0
+#define HE2_B_GPIO_Port GPIOA
+#define HE2_A_Pin GPIO_PIN_1
+#define HE2_A_GPIO_Port GPIOA
+#define HE1_B_Pin GPIO_PIN_2
+#define HE1_B_GPIO_Port GPIOA
+#define RF_DATA_Pin GPIO_PIN_3
+#define RF_DATA_GPIO_Port GPIOA
+#define HE1_A_Pin GPIO_PIN_4
+#define HE1_A_GPIO_Port GPIOA
+#define IS1_Pin GPIO_PIN_0
+#define IS1_GPIO_Port GPIOB
+#define IS2_Pin GPIO_PIN_1
+#define IS2_GPIO_Port GPIOB
+#define DBG_LED_Pin GPIO_PIN_10
+#define DBG_LED_GPIO_Port GPIOB
+#define CS_Pin GPIO_PIN_12
+#define CS_GPIO_Port GPIOB
+#define PA15_Pin GPIO_PIN_15
+#define PA15_GPIO_Port GPIOA
+#define PB3_Pin GPIO_PIN_3
+#define PB3_GPIO_Port GPIOB
+#define PB4_Pin GPIO_PIN_4
+#define PB4_GPIO_Port GPIOB
+#define PB8_Pin GPIO_PIN_8
+#define PB8_GPIO_Port GPIOB
+#define SERVO_Pin GPIO_PIN_9
+#define SERVO_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
-
+extern UART_HandleTypeDef huart1;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
