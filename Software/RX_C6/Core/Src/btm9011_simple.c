@@ -1,20 +1,18 @@
 /*
- * btm9011_simple.c — Simplified BTM9011 H-bridge motor driver
+ * Lihtsustatud versioon, kus on ainult vajalik
  */
 
 #include "btm9011_simple.h"
 
 /* -----------------------------------------------------------------------
- * Pre-built command bytes.
  *
- * Each byte:  [DIS=0 | IN1 | IN2 | PWM4 | PWM3 | PWM2 | PWM1 | PWM0]
+ *	PWM ei saa kiibile ette anda - selle asemel saadame full speed ja brake
+ *	PWM kontrollime tarkvaras manuaalselt
  *
- *   Forward  = 0101 1111 = 0x5F  (IN1=1, IN2=0, PWM=31)
- *   Reverse  = 0011 1111 = 0x3F  (IN1=0, IN2=1, PWM=31)
- *   Brake    = 0000 0000 = 0x00  (IN1=0, IN2=0, PWM=0)
- *
- * PWM is always set to 31 (full) because the chip's internal PWM does not
- * vary speed reliably. Speed control is done in software in main.c instead.
+ *   Edasi  = 0101 1111 = 0x5F  (IN1=1, IN2=0, PWM=31)
+ *   Tagasi = 0011 1111 = 0x3F  (IN1=0, IN2=1, PWM=31)
+ *   Pidur  = 0000 0000 = 0x00  (IN1=0, IN2=0, PWM=0)
+
  * ----------------------------------------------------------------------- */
 #define CMD_FORWARD  0x5F
 #define CMD_REVERSE  0x3F

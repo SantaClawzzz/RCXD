@@ -12,7 +12,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "btm9011.h"
+#include "btm9011_simple.h"
 #include "ibus.h"
 /* USER CODE END Includes */
 
@@ -48,7 +48,6 @@ UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_rx;
 
 /* USER CODE BEGIN PV */
-BTM9011_HandleTypeDef hbtm;
 static uint16_t  ibus_safe[IBUS_USER_CHANNELS] = {0};
 volatile uint8_t ibus_new_data = 0;
 /* USER CODE END PV */
@@ -110,14 +109,13 @@ int main(void)
   HAL_GPIO_WritePin(DBG_LED_GPIO_Port, DBG_LED_Pin, GPIO_PIN_SET);
 
   /* Motor driver — SPI1, two daisy-chained BTM9011 chips */
-  BTM9011_Init(&hbtm, &hspi1, CS_GPIO_Port, CS_Pin, 2);
+  btm_init(&hspi1, CS_GPIO_Port, CS_Pin);
 
   /* Start the 16 kHz timer that drives the RF state machine */
   HAL_TIM_Base_Start_IT(&htim2);
 
   /* Both motors start braked */
-  uint8_t cmds[2] = { BTM9011_CMD_BRAKE, BTM9011_CMD_BRAKE };
-  BTM9011_Send(&hbtm, cmds);
+  btm_brake();
 
   /* Servo starts at center (1500 µs) */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
@@ -137,10 +135,9 @@ int main(void)
    * dir_r: reversed direction for the second motor
    * pwm_count: PWM steps count for the motor control
    * */
-  uint8_t     duty  = 0;
-  BTM9011_Dir dir   = BTM9011_DIR_BRAKE;
-  BTM9011_Dir dir_r = BTM9011_DIR_BRAKE;
-  uint8_t     pwm_count = 0;
+  uint8_t duty      = 0;
+  uint8_t dir       = BTM_BRAKE;
+  uint8_t pwm_count = 0;
 
   while (1)
   {
@@ -171,19 +168,14 @@ int main(void)
     	  /* Writable value as duty cycle */
     	  duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 1000);
     	  /* Direction based on channel 4 position */
-    	  dir  = (ibus_safe[4] > 1500) ? BTM9011_DIR_REVERSE : BTM9011_DIR_FORWARD;
+    	  dir  = (ibus_safe[4] > 1500) ? BTM_REVERSE : BTM_FORWARD;
       }
 
 	  /* If throttle not above 1050, then brake and duty cycle 0 */
       else {
-    	  dir  = BTM9011_DIR_BRAKE;
+    	  dir  = BTM_BRAKE;
     	  duty = 0;
       }
-      /* Reversed direction for the other motor
-       * dir 	= normal   for Left motor
-       * dir_r 	= reversed for Right motor */
-      dir_r = (dir == BTM9011_DIR_FORWARD) ? BTM9011_DIR_REVERSE :
-              (dir == BTM9011_DIR_REVERSE) ? BTM9011_DIR_FORWARD : dir;
 
       /* steering servo - right stick*/
       uint16_t servo = ibus_safe[0];
@@ -197,19 +189,10 @@ int main(void)
      * During the ON phase send a full-drive command; during OFF send brake.
      * This works regardless of whether the BTM9011's internal PWM field
      * actually varies speed (it appears not to). */
-    uint8_t L_motor, R_motor;
-    if (dir == BTM9011_DIR_BRAKE || pwm_count >= duty)
-    {
-    	L_motor = BTM9011_CMD_BRAKE;
-    	R_motor = BTM9011_CMD_BRAKE;
-    }
+    if (dir == BTM_BRAKE || pwm_count >= duty)
+      btm_brake();
     else
-    {
-    	L_motor = BTM9011_BuildCmd(dir,   BTM9011_DUTY_MAX);
-    	R_motor = BTM9011_BuildCmd(dir_r, BTM9011_DUTY_MAX);
-    }
-    uint8_t c[2] = { L_motor, R_motor };
-    BTM9011_Send(&hbtm, c);
+      btm_drive(dir, dir);
     if (++pwm_count >= MOTOR_PWM_STEPS) pwm_count = 0;
 
   }
