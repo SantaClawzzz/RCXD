@@ -1,8 +1,0 @@
-../Core/Src/pid.c:6:14:pid_clampf	24	static
-../Core/Src/pid.c:15:6:PID_Init	24	static
-../Core/Src/pid.c:28:6:PID_Reset	16	static
-../Core/Src/pid.c:34:6:PID_SetTunings	24	static
-../Core/Src/pid.c:41:6:PID_SetIntegralLimit	16	static
-../Core/Src/pid.c:48:7:PID_Compute	48	static
-../Core/Src/pid.c:78:6:PID_SyncMotors	32	static
-../Core/Src/pid.c:92:9:PID_ClampDuty	16	static

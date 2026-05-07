@@ -5,39 +5,35 @@
 #include "btm9011_simple.h"
 
 /* -----------------------------------------------------------------------
+ * SDI byte: SDO_SEL | INA | INB | PWM | SEL | SEN_EN | SR | EN
  *
- *	PWM ei saa kiibile ette anda - selle asemel saadame full speed ja brake
- *	PWM kontrollime tarkvaras manuaalselt
+ *   Edasi  = 0101 1111 = 0x5F  (INA=1, INB=0, PWM=1, EN=1)
+ *   Tagasi = 0011 1111 = 0x3F  (INA=0, INB=1, PWM=1, EN=1)
+ *   Pidur  = 0001 1111 = 0x1F  (INA=0, INB=0, PWM=1, EN=1)
  *
- *   Edasi  = 0101 1111 = 0x5F  (IN1=1, IN2=0, PWM=31)
- *   Tagasi = 0011 1111 = 0x3F  (IN1=0, IN2=1, PWM=31)
- *   Pidur  = 0000 0000 = 0x00  (IN1=0, IN2=0, PWM=0)
-
+ *	PWM on tehtud tarkvaras, sest ainult neljas bit on PWM jaoks (1 või 0)
+ *
  * ----------------------------------------------------------------------- */
+
+// Edasi, tagasi ja pidurdus byteid
 #define CMD_FORWARD  0x5F
 #define CMD_REVERSE  0x3F
-#define CMD_BRAKE    0x00
+#define CMD_BRAKE    0x1F
 
-/* Module-level state — set once by btm_init() */
+// Määrab btm_init käigus SPI, porti ja pini
 static SPI_HandleTypeDef *s_hspi;
 static GPIO_TypeDef      *s_cs_port;
 static uint16_t           s_cs_pin;
 
 
-/* Helper: look up the raw SPI byte for a direction */
-static uint8_t dir_to_cmd(uint8_t dir)
-{
-    if (dir == BTM_FORWARD) return CMD_FORWARD;
-    if (dir == BTM_REVERSE) return CMD_REVERSE;
-    return CMD_BRAKE;
-}
-
-/* Helper: clock two bytes into the daisy-chain and latch */
+// Saadab kahele SPI chipile info, mis on daisy-chain ühenduses
+// Esimene on tegelikult kaskaadis viiane kiip
 static void send_two(uint8_t far_chip, uint8_t near_chip)
 {
+	// Massiiv, kus on mõlema kiibi byte
     uint8_t tx[2] = { far_chip, near_chip };
 
-    /* CS high → data clocked in → CS low latches output */
+    // Enne CS tuleb HIGH tõmmata, siis kirjutab info ja LOW tõmmates lukustub ja töötleb andmed
     HAL_GPIO_WritePin(s_cs_port, s_cs_pin, GPIO_PIN_SET);
     HAL_SPI_Transmit(s_hspi, tx, 2, 100);
     HAL_GPIO_WritePin(s_cs_port, s_cs_pin, GPIO_PIN_RESET);
@@ -46,6 +42,7 @@ static void send_two(uint8_t far_chip, uint8_t near_chip)
 
 /* ---------------------------------------------------------------------- */
 
+// Init, mis teeb setupis teiste initidega, määrab SPI, port ja pin ning tõmbab CS pinni LOW
 void btm_init(SPI_HandleTypeDef *hspi, GPIO_TypeDef *cs_port, uint16_t cs_pin)
 {
     s_hspi    = hspi;
@@ -55,19 +52,26 @@ void btm_init(SPI_HandleTypeDef *hspi, GPIO_TypeDef *cs_port, uint16_t cs_pin)
     HAL_GPIO_WritePin(cs_port, cs_pin, GPIO_PIN_RESET); /* CS idle (low) */
 }
 
+//
 void btm_drive(uint8_t left_dir, uint8_t right_dir)
 {
-    /* The right motor is physically wired backwards on the PCB.
-     * Flip its direction here so the caller never has to think about it. */
-    uint8_t right_flipped;
-    if      (right_dir == BTM_FORWARD) right_flipped = BTM_REVERSE;
-    else if (right_dir == BTM_REVERSE) right_flipped = BTM_FORWARD;
-    else                               right_flipped = BTM_BRAKE;
+    // Mootorid on samamoodi ühendatud, aga selletõttu on üks mootor tagurpidi
+	// Siin parema mootori keerab tagurpidi tarkvaras
+    uint8_t right_cmd;
+    if      (right_dir == BTM_FORWARD) right_cmd = CMD_REVERSE;
+    else if (right_dir == BTM_REVERSE) right_cmd = CMD_FORWARD;
+    else                               right_cmd = CMD_BRAKE;
 
-    /* Daisy-chain order: first byte → far chip (right), second → near chip (left) */
-    send_two(dir_to_cmd(right_flipped), dir_to_cmd(left_dir));
+    uint8_t left_cmd;
+    if      (left_dir == BTM_FORWARD) left_cmd = CMD_FORWARD;
+    else if (left_dir == BTM_REVERSE) left_cmd = CMD_REVERSE;
+    else                              left_cmd  = CMD_BRAKE;
+
+    // Saadab info kasutades eelnevat funktsiooni
+    send_two(right_cmd, left_cmd);
 }
 
+// Pidurdus funktsioon
 void btm_brake(void)
 {
     send_two(CMD_BRAKE, CMD_BRAKE);

@@ -1,5 +1,4 @@
-../Core/Src/btm9011_simple.c:30:16:dir_to_cmd	16	static
-../Core/Src/btm9011_simple.c:38:13:send_two	24	static
-../Core/Src/btm9011_simple.c:51:6:btm_init	24	static
-../Core/Src/btm9011_simple.c:60:6:btm_drive	32	static
-../Core/Src/btm9011_simple.c:73:6:btm_brake	8	static
+../Core/Src/btm9011_simple.c:31:13:send_two	24	static
+../Core/Src/btm9011_simple.c:46:6:btm_init	24	static
+../Core/Src/btm9011_simple.c:56:6:btm_drive	24	static
+../Core/Src/btm9011_simple.c:75:6:btm_brake	8	static

@@ -24,12 +24,14 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-/* Soft-PWM resolution: 32 steps (counter 0–31)
- * Duty 0 = always brake, duty 32 = always drive (100%)*/
+// PWM täiteteguri samm
 #define MOTOR_PWM_STEPS 32U
 
-// MOTOR_DUTY_MIN sets the step at which the motor first turns on.
+// Mootorie miinimum täitetegur
 #define MOTOR_DUTY_MIN  2U
+
+// Maksimaalne lubatud servo pööramise samm
+#define SERVO_MAX_STEP  25U
 
 /* USER CODE END PD */
 
@@ -48,9 +50,14 @@ UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_rx;
 
 /* USER CODE BEGIN PV */
+
+// iBus safe hoiab kõiki puldi kanali väärtusi
 static uint16_t  ibus_safe[IBUS_USER_CHANNELS] = {0};
-volatile uint8_t ibus_new_data = 0;
+// Servo positsiooni muutuja, keskpunktis alustab
+volatile uint16_t g_servo_pos = 1500;
+
 /* USER CODE END PV */
+
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
@@ -82,7 +89,6 @@ int main(void)
 
   /* MCU Configuration--------------------------------------------------------*/
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
   HAL_Init();
 
   /* USER CODE BEGIN Init */
@@ -105,23 +111,24 @@ int main(void)
   MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
-  /* Active-low LED — drive HIGH so it starts OFF */
+  // Aktiive nullolekuga LED, algselt HIGH, et oleks kustu
   HAL_GPIO_WritePin(DBG_LED_GPIO_Port, DBG_LED_Pin, GPIO_PIN_SET);
 
-  /* Motor driver — SPI1, two daisy-chained BTM9011 chips */
+  // Mootorite juhtkiibid on kaskaadühenduses kasutades SPI1 ja CS_Pin
   btm_init(&hspi1, CS_GPIO_Port, CS_Pin);
 
-  /* Start the 16 kHz timer that drives the RF state machine */
-  HAL_TIM_Base_Start_IT(&htim2);
-
-  /* Both motors start braked */
+  // Mõlemad mootorid alustavad seiskuna
   btm_brake();
 
-  /* Servo starts at center (1500 µs) */
+  /* Servo - kasutab TIM3, mis teeb takti ette PWM jaoks
+   * Vasak - 1000
+   * Kesk - 1500
+   * Parem - 3000
+  */
   HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_2);
   __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 1500);
 
-  /* iBUS receiver on USART1 (PB7) — DMA circular mode, 32-byte packet */
+  // iBus saadab infot PB7 pinnil läbi USART1
   ibus_init();
 
   /* USER CODE END 2 */
@@ -129,15 +136,9 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
 
-  /* --- Soft-PWM state updated by iBUS ---
-   * duty: duty cycle for PWM
-   * dir: direction of the first motor
-   * dir_r: reversed direction for the second motor
-   * pwm_count: PWM steps count for the motor control
-   * */
-  uint8_t duty      = 0;
-  uint8_t dir       = BTM_BRAKE;
-  uint8_t pwm_count = 0;
+  uint8_t  pwm_count = 0;			// PWM täiteteguri samm
+  uint8_t  dir       = BTM_BRAKE;	// Mootorite suund
+  uint8_t  duty      = 0;			// Täitetegur
 
   while (1)
   {
@@ -145,54 +146,37 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-    /* --- iBUS: update target speed/direction ---
-     * ch[2]: throttle — bottom (1000) = stop, top (2000) = full speed
-     * ch[4]: reverse toggle (SWA) — low = forward, high = reverse
-     * ch[0]: steering servo
-     * ch[5]: LED toggle switch */
+	// Mootorite kiirus - ibus_safe kanalil 2
+    uint16_t throttle = ibus_safe[2];
+    // Kiiruse Min ja Max piiramine
+    if (throttle < 1000) throttle = 1000;
+    if (throttle > 2000) throttle = 2000;
 
-    if (ibus_new_data)
-    {
-      ibus_new_data = 0;
+    // Alates 1050 hakkab lugema, siis väike puhver mootorite nullolekuks
+    if (throttle > 1050) {
 
-      /* Throttle - left stick*/
-      uint16_t throttle = ibus_safe[2];
+      // Kiiruse juhtkang algab 1000 pealt, sellega saab absoluut väärtuse
+      uint16_t mag = throttle - 1000;
 
-      /* Throttle min and max limit */
-      if (throttle < 1000) throttle = 1000;
-      if (throttle > 2000) throttle = 2000;
+      // Täiteteguri arvutus
+      duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 1000);
 
-      if (throttle > 1050) {
-    	  /* Magnitude = 50–1000 */
-    	  uint16_t mag = throttle - 1000;
-    	  /* Writable value as duty cycle */
-    	  duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 1000);
-    	  /* Direction based on channel 4 position */
-    	  dir  = (ibus_safe[4] > 1500) ? BTM_REVERSE : BTM_FORWARD;
-      }
+      // Mootorite suuna määramine ibus_safe kanali 4 järgi
+      dir  = (ibus_safe[4] > 1500) ? BTM_REVERSE : BTM_FORWARD;
 
-	  /* If throttle not above 1050, then brake and duty cycle 0 */
-      else {
-    	  dir  = BTM_BRAKE;
-    	  duty = 0;
-      }
-
-      /* steering servo - right stick*/
-      uint16_t servo = ibus_safe[0];
-      if (servo < 1000) servo = 1000;
-      if (servo > 2000) servo = 2000;
-      __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, 3000 - servo);
-
+    } else { // Muul määrab piduramise
+      dir  = BTM_BRAKE;
+      duty = 0;
     }
 
-    /* --- Soft PWM: runs every iteration regardless of iBUS ---
-     * During the ON phase send a full-drive command; during OFF send brake.
-     * This works regardless of whether the BTM9011's internal PWM field
-     * actually varies speed (it appears not to). */
+    // Kui pidurdus määratud või PWM samm suurem kui täitetegur pidurdab
     if (dir == BTM_BRAKE || pwm_count >= duty)
       btm_brake();
+    // Muul juhul mootorid tööle täis kiirus
     else
       btm_drive(dir, dir);
+    // Kui PWM samm suurem kui määratud max samm siis nullib
+    // Samuti ++pwm_count igakord suurendab enne võrdlust selle väärtust
     if (++pwm_count >= MOTOR_PWM_STEPS) pwm_count = 0;
 
   }
@@ -499,14 +483,33 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-  if (huart->Instance == USART1)
-  {
-    ibus_reset_failsafe();
-    /* Read here — DMA just finished, ~4 ms until the next packet starts,
-     * so the buffer is stable. Copying now avoids any race in the main loop. */
-    if (ibus_read(ibus_safe))
-      ibus_new_data = 1;
-  }
+	// Võrdleb kas sisse tulev UART info on USART1 või mitte
+	// Kui ei ole lõpetab Callbacki
+  if (huart->Instance != USART1) return;
+
+  /* Alustab uuesti failsafe lugejat
+   * kui mingi ajatagant ei saa infot paneb kõik kinni
+   *
+   * iBus read täidab seda muutujat uuesti */
+  ibus_reset_failsafe();
+  ibus_read(ibus_safe);
+
+  // Servomootoriga pööramine - ibus_safe kanalil 0
+  uint16_t servo_target = ibus_safe[0];
+  // Min ja Max piiramine
+  if (servo_target < 1000) servo_target = 1000;
+  if (servo_target > 2000) servo_target = 2000;
+
+  // Pööramine on tagurpidi, see pöörab tagasi
+  servo_target = 3000 - servo_target;
+  /* Piirab pööramis kiirust, kui liiga äkiline liigutus
+   * tõmbab liiga palju voolu ja lükkab MCU imelikku oleku
+   * kus kõik lõpetab töötamise */
+  if      (servo_target > g_servo_pos + SERVO_MAX_STEP) g_servo_pos += SERVO_MAX_STEP;
+  else if (servo_target + SERVO_MAX_STEP < g_servo_pos) g_servo_pos -= SERVO_MAX_STEP;
+  else                                                  g_servo_pos  = servo_target;
+  // Määrab lõpuks servomootori nurga
+  __HAL_TIM_SET_COMPARE(&htim3, TIM_CHANNEL_2, g_servo_pos);
 }
 
 /* USER CODE END 4 */
