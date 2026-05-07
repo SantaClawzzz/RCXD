@@ -11,7 +11,7 @@ Also includes 3.3V and 5V LDO regulators, where 5V is unused and routed to exter
 
 ## Components
 
-The project has had 2 MCU changes:
+The project has had 3 MCUs:
 MCU:
   * ATMega328p-AU
   * ESP32-C6-WROOM-1U
@@ -20,6 +20,7 @@ MCU:
 Buttons and joystick are routed to IDC headers which are easier to crimp by hand and allows for the mechanical design to be flexible. TX header is still the default 2.54mm header, which connection can be concerning as it doesn't have any locking mechanism.
 
 Design is done with panelization in mind, so not every switch and joystick has to be ordered separately.
+This only benefitial with larger quantities
 
 * MCU - [STM32F103C6](/Electronics/Datasheets/stm32f103c6.pdf)
 * Backup MCU [STM32F103C8](/Electronics/Datasheets/stm32f103c8.pdf)
@@ -32,6 +33,9 @@ Design is done with panelization in mind, so not every switch and joystick has t
 * [Button](/Electronics/Datasheets/TL2201.pdf)
 * [Joystick](/Electronics/Datasheets/thb001p.pdf)
 * [FS1000A](/Electronics/Datasheets/FS1000A_webpage.pdf) and the [module](/Electronics/Datasheets/433%20MHz%20RF%20Transmitter%20Module_0.pdf)
+
+433MHz didn't work well, so TX was pushed aside and Flysky controller was brought in to use
+* [FS-i6X](https://www.flysky-cn.com/fsi6x)
 
 ## Mechanical parameters:
   * 34.5mm x 80mm
@@ -91,6 +95,7 @@ So with the BTM chip we gain:
   * 3x [TOF](https://www.pololu.com/product/3415) sensors (I2C)
   * 1x [OLED](https://www.adafruit.com/product/931?srsltid=AfmBOooS0SgYaJRqBKaiZJ_inS_Hm55apfdVYE57VtUnGSEqd8KzymMf) screen (I2C) - No RST or VIN
   * 1x [XY-MK-5V](https://radiolux.com.ua/files/pdf/RFmodule.pdf) (GPIO)
+  * 1x [FS-A8s](https://www.flysky-cn.com/a8sspecifications)
 
 ## Power
 * 3S 12V battery, since motors are 12V
@@ -110,3 +115,24 @@ Also an idea is active cooling, so if the PCB can't withstand it maybe with acti
 For the logic the same STM32F103Cx MCU is used.<br>
 It takes in data from the TX PCB and gives signals to the drivers, gets data through SPI from drivers and also current sense which it has to do on RX board since it has no way of sending info to the TX board.<br>
 Some extra pins are drawn to unused GPIO headers.
+
+# VX
+
+Video part is completely seperate system, no PCB currently but schematic is made in Altium<br>
+Mostly plug and play, TX06 camera only need power (4 in 1 system).<br>
+Receiver needs 2 electrolytic capacitors (470uF), wiring and antenna. Video soldered straigth to display, needs to have proper RCA jack
+
+## Components
+* Car
+  * [TX06](https://www.eachine.com/Eachine-TX06-700TVL-FOV-130-Degree-5_8Ghz-40CH-Smart-Audio-Mini-FPV-Camera-AIO-Transmitter-For-RC-Dr-p-1418.html)
+  * 1S battery - Picture below
+* Controller
+  * Protoboard
+  * 2x 470uF electrolytic capacitors
+  * [U.FL antenna connector](https://www.digikey.com/en/products/detail/te-connectivity-amp-connectors/2337019-1/9974052)
+  * [Antenna](https://www.digikey.com/en/products/detail/yic/ATIF2458G-3010/21804188)
+  * Screen - Picture below
+  * 2S or 3S battery
+
+![battery](./Datasheets/1S%20bttery_screen.png)
+![screen](./Datasheets/LCD%20screen_screen.png)
