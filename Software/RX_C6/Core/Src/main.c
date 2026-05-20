@@ -146,37 +146,35 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-	// Mootorite kiirus - ibus_safe kanalil 2
-    uint16_t throttle = ibus_safe[2];
-    // Kiiruse Min ja Max piiramine
-    if (throttle < 1000) throttle = 1000;
-    if (throttle > 2000) throttle = 2000;
-
-    // Alates 1050 hakkab lugema, siis väike puhver mootorite nullolekuks
-    if (throttle > 1050) {
-
-      // Kiiruse juhtkang algab 1000 pealt, sellega saab absoluut väärtuse
-      uint16_t mag = throttle - 1000;
-
-      // Täiteteguri arvutus
-      duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 1000);
-
-      // Mootorite suuna määramine ibus_safe kanali 4 järgi
-      dir  = (ibus_safe[4] > 1500) ? BTM_REVERSE : BTM_FORWARD;
-
-    } else { // Muul määrab piduramise
+    // Lukustus - kanal 7 (SWA): all = lukus, üleval = sõit lubatud
+    if (ibus_safe[6] < 1500) {
       dir  = BTM_BRAKE;
       duty = 0;
+    } else {
+      // Mootori kiirus ja suund - parem kangi vertikaalne telg (kanal 2)
+      // Kesk ~1500 = pidurdus, üles > 1550 = edasi, alla < 1450 = tagurpidi
+      uint16_t raw = ibus_safe[1];
+      if (raw < 1000) raw = 1000;
+      if (raw > 2000) raw = 2000;
+
+      if (raw > 1550) {
+        uint16_t mag = raw - 1500;
+        duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 500);
+        dir  = BTM_REVERSE;
+      } else if (raw < 1450) {
+        uint16_t mag = 1500 - raw;
+        duty = MOTOR_DUTY_MIN + (uint8_t)(mag * (MOTOR_PWM_STEPS - MOTOR_DUTY_MIN) / 500);
+        dir  = BTM_FORWARD;
+      } else {
+        dir  = BTM_BRAKE;
+        duty = 0;
+      }
     }
 
-    // Kui pidurdus määratud või PWM samm suurem kui täitetegur pidurdab
     if (dir == BTM_BRAKE || pwm_count >= duty)
       btm_brake();
-    // Muul juhul mootorid tööle täis kiirus
     else
       btm_drive(dir, dir);
-    // Kui PWM samm suurem kui määratud max samm siis nullib
-    // Samuti ++pwm_count igakord suurendab enne võrdlust selle väärtust
     if (++pwm_count >= MOTOR_PWM_STEPS) pwm_count = 0;
 
   }
@@ -494,8 +492,11 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
   ibus_reset_failsafe();
   ibus_read(ibus_safe);
 
-  // Servomootoriga pööramine - ibus_safe kanalil 0
-  uint16_t servo_target = ibus_safe[0];
+  // Lukustus - kui kanal 7 all, servo ei reageeri
+  if (ibus_safe[6] < 1500) return;
+
+  // Servomootoriga pööramine - vasak kangi horisontaalne telg (kanal 4)
+  uint16_t servo_target = ibus_safe[3];
   // Min ja Max piiramine
   if (servo_target < 1000) servo_target = 1000;
   if (servo_target > 2000) servo_target = 2000;

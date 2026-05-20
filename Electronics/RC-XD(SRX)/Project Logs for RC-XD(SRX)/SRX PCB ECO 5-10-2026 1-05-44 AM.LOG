@@ -1,0 +1,14 @@
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=RGB(153, 153, 153)
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Blue
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Red
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Red
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Red
+Change Net Color : Old Net Color=RGB(158, 161, 117) New Net Color=Red
+Added Rule: Name=Schematic Supply Nets_4
+Added Rule: Name=Schematic Supply Nets_7
+Added Rule: Name=Schematic Supply Nets_8
+Added Rule: Name=Schematic Supply Nets_9
+Added Rule: Name=Schematic Supply Nets_10
+Added Rule: Name=Schematic Supply Nets_11
+Added Rule: Name=Schematic Supply Nets_12
+Added Rule: Name=Schematic Supply Nets_13

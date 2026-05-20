@@ -1,0 +1,10 @@
+Change Component Footprint: Designator=S1 Old Footprint=TS04-66-73-BK-260-SMT-Footprint-1 New Footprint=PTS815 SJM 250 SMTR LFS
+Change Component Comment : Designator=S1 Old Comment=TS04 New Comment=PTS815S
+Change Managed Component Library Link : Designator=S1 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=dd5399d5-16c4-480f-9b11-847aa9966fa3 New ItemGUID=aafcc92d-c352-4890-956f-26102571e82a Old RevisionGUID=76f6c073-8892-45f9-b66d-2c7b95a65c0f New RevisionGUID=9cbeec54-d97a-4ec9-93f9-d79f21d7dfb1
+Change component parameters: Designator = "S1" ("S1"); Footprint = "TS04-66-73-BK-260-SMT-Footprint-1"; UniqueID = "\DOAKXYYV" ("\DOAKXYYV")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "C&K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "PTS815 SJM 250 SMTR LFS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"

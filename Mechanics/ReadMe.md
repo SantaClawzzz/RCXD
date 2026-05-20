@@ -1,6 +1,6 @@
 # Info
 
-This will be the folder for all 3D model and mechanics related files.<br>
-Currently only contains the PCB STEP file exports.
+All 3D print files for the car and controller adapter<br>
+Small proto of the unfinished 433MHz controller
 
-No document except the design description is present.
+PCB files are also exported.

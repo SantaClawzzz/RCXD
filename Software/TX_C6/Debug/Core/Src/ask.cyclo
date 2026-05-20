@@ -1,0 +1,10 @@
+../Core/Src/ask.c:7:6:ask_init	8
+../Core/Src/ask.c:30:6:ask_pinchange_callback	9
+../Core/Src/ask.c:61:6:ask_available	21
+../Core/Src/ask.c:141:6:ask_wait	2
+../Core/Src/ask.c:150:6:ask_reset_available	2
+../Core/Src/ask.c:162:9:ask_read_bytes	2
+../Core/Src/ask.c:172:10:ask_read_time_of_bit	1
+../Core/Src/ask.c:177:6:ask_send_bytes	9
+../Core/Src/ask.c:221:9:ask_checkChannelLast4Bit	3
+../Core/Src/ask.c:236:9:ask_checkChannelLast8Bit	3

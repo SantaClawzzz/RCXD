@@ -16,7 +16,7 @@
 
 /* User configuration */
 #define IBUS_UART				(&huart1)
-#define IBUS_USER_CHANNELS		6		// Use 6 channels
+#define IBUS_USER_CHANNELS		7		// Use 7 channels (CH7 = lock switch)
 
 
 /* Defines */

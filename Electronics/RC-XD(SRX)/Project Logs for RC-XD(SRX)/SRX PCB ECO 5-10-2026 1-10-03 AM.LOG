@@ -1,0 +1,84 @@
+Removed Pin From Net: NetName=NetQ2_1 Pin=R5-1
+Removed Pin From Net: NetName=BAT_SW Pin=R5-2
+Removed Pin From Net: NetName=NetQ2_3 Pin=R6-1
+Removed Pin From Net: NetName=NetQ1_4 Pin=R6-2
+Removed Pin From Net: NetName=NetQ5_3 Pin=R10-1
+Removed Pin From Net: NetName=NetQ4_4 Pin=R10-2
+Change Component Footprint: Designator=R2 Old Footprint=Resistor_0402_M New Footprint=Resistor_0603_M
+Change Component Footprint: Designator=R5 Old Footprint=Resistor_0402_M New Footprint=Resistor_0603_M
+Change Component Footprint: Designator=R6 Old Footprint=Resistor_0402_M New Footprint=Resistor_0603_M
+Change Component Footprint: Designator=R9 Old Footprint=Resistor_0402_M New Footprint=Resistor_0603_M
+Change Component Footprint: Designator=R10 Old Footprint=Resistor_0402_M New Footprint=Resistor_0603_M
+Change Component Comment : Designator=R5 Old Comment=100k New Comment=100R
+Change Component Comment : Designator=R6 Old Comment=100R New Comment=100k
+Change Managed Component Library Link : Designator=R2 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=778dbc48-ee44-4599-9d1e-1567c79b0207 New ItemGUID=F5253B16-DCBA-44B4-B549-52D6D9133847 Old RevisionGUID=aa14998c-c2a4-4e3f-98dc-a8c7504f2129 New RevisionGUID=3CA2E99A-EBF1-40D0-8B27-4F15DFA4947C
+Change Managed Component Library Link : Designator=R5 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=778dbc48-ee44-4599-9d1e-1567c79b0207 New ItemGUID=56D7EB87-4598-430E-9143-C67B711B2A9B Old RevisionGUID=aa14998c-c2a4-4e3f-98dc-a8c7504f2129 New RevisionGUID=0cbe0684-57d7-4363-9a63-9c16bac3fffb
+Change Managed Component Library Link : Designator=R6 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=CE9A71EB-2796-4F32-85E4-53F1EFE945C4 New ItemGUID=F5253B16-DCBA-44B4-B549-52D6D9133847 Old RevisionGUID=7D9FBF8E-4B9F-46DD-A613-CF30E3D4CD4E New RevisionGUID=3CA2E99A-EBF1-40D0-8B27-4F15DFA4947C
+Change Managed Component Library Link : Designator=R9 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=778dbc48-ee44-4599-9d1e-1567c79b0207 New ItemGUID=F5253B16-DCBA-44B4-B549-52D6D9133847 Old RevisionGUID=aa14998c-c2a4-4e3f-98dc-a8c7504f2129 New RevisionGUID=3CA2E99A-EBF1-40D0-8B27-4F15DFA4947C
+Change Managed Component Library Link : Designator=R10 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=CE9A71EB-2796-4F32-85E4-53F1EFE945C4 New ItemGUID=56D7EB87-4598-430E-9143-C67B711B2A9B Old RevisionGUID=7D9FBF8E-4B9F-46DD-A613-CF30E3D4CD4E New RevisionGUID=0cbe0684-57d7-4363-9a63-9c16bac3fffb
+Change component parameters: Designator = "R10" ("R10"); Footprint = "Resistor_0402_M"; UniqueID = "\ZVWRMVHB" ("\ZVWRMVHB")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 100R, 1%, 1/10W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R2" ("R2"); Footprint = "Resistor_0402_M"; UniqueID = "\DDERQJOU" ("\DDERQJOU")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 100k, 1%, 1/10W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R9" ("R9"); Footprint = "Resistor_0402_M"; UniqueID = "\LRAGZGMJ" ("\LRAGZGMJ")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 100k, 1%, 1/10W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6" ("R6"); Footprint = "Resistor_0402_M"; UniqueID = "\EJZPCXAQ" ("\EJZPCXAQ")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 100k, 1%, 1/10W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100k"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "R5" ("R5"); Footprint = "Resistor_0402_M"; UniqueID = "\GQCLVEXM" ("\GQCLVEXM")
+Change component parameters (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Any"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "Resistor, 0603, 100R, 1%, 1/10W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "100mW"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetQ1_4 Pin=R5-1
+Added Pin To Net: NetName=NetQ2_3 Pin=R5-2
+Added Pin To Net: NetName=NetQ2_1 Pin=R6-1
+Added Pin To Net: NetName=BAT_SW Pin=R6-2
+Added Pin To Net: NetName=NetQ4_4 Pin=R10-1
+Added Pin To Net: NetName=NetQ5_3 Pin=R10-2

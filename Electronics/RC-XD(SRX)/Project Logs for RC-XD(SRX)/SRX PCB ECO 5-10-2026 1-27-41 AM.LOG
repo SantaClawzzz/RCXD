@@ -1,0 +1,28 @@
+Change Component Footprint: Designator=P9 Old Footprint=2 pin RA 2.54mm header New Footprint=2Pos Pin Header Vertical
+Change Component Comment : Designator=P9 Old Comment=22-28-9023 New Comment=PH1-02-UA
+Change Managed Component Library Link : Designator=P9 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=d8ed0e2f-4fde-4308-9c16-91ddeb35c7c6 New ItemGUID=4b9c9fe1-2134-4c4d-91cf-5e857295cf3e Old RevisionGUID=e1a2b7df-d0fe-4018-8673-479eff3eb500 New RevisionGUID=cceea3c3-02a3-4068-abb6-545388fbb661
+Change component parameters: Designator = "P9" ("P9"); Footprint = "2 pin RA 2.54mm header"; UniqueID = "\ECOVMBJF" ("\ECOVMBJF")
+Change component parameters (AddParameter): Name = "Contact Gender"; Value = "Male"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "Gold"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Resistance"; Value = "20mO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "3A"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "9.2456mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Housing Material"; Value = "PBT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Insulation Resistance"; Value = "5GO"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lead Free"; Value = "Lead Free"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Lifecycle Status"; Value = "Production"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Adam Tech"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mount"; Value = "TH"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Positions"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Rows"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Part number"; Value = "PH1-04-UA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "REACH SVHC"; Value = "Yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "Compliant"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Schedule B"; Value = "8536694040, 8536694040"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal Pitch"; Value = "2.54mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Termination"; Value = "Solder"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250V"; VariantName = "[No Variations]"

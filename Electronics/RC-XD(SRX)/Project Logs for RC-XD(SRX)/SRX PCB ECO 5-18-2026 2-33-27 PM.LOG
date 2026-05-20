@@ -1,0 +1,3 @@
+Change Component DesignItemId : Designator=SW3 Old DesignItemId=CMP-ROOT-01342-1 New DesignItemId=CMP-ROOT-01342-2
+Change Component Footprint: Designator=SW3 Old Footprint=DS04-254-2L-04BK-Footprint-1 New Footprint=DS04-254-2L-04BK-Footprint-1
+Change Managed Component Library Link : Designator=SW3 Old VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D New VaultGUID=149AB3FE-7166-46E8-BF6C-F7A47B5F1A6D Old ItemGUID=8bf606ba-623e-4e79-a31d-a1fee51fb5e3 New ItemGUID=8bf606ba-623e-4e79-a31d-a1fee51fb5e3 Old RevisionGUID=a42882a6-6f87-468e-81d7-1e04b1f00376 New RevisionGUID=9d843c75-f86c-40b9-a232-be7c3e18a6d0

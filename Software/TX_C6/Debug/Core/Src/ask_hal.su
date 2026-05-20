@@ -1,0 +1,15 @@
+../Core/Src/ask_hal.c:8:17:micros_impl	16	static
+../Core/Src/ask_hal.c:20:6:ask_write_pin_433	16	static
+../Core/Src/ask_hal.c:26:6:ask_read_pin_433	4	static
+../Core/Src/ask_hal.c:28:10:ask_micros_433	8	static
+../Core/Src/ask_hal.c:30:6:ask_init_rx433	4	static
+../Core/Src/ask_hal.c:31:6:ask_init_tx433	4	static
+../Core/Src/ask_hal.c:33:6:ask_delay_ms_433	16	static
+../Core/Src/ask_hal.c:35:6:ask_delay_us_433	24	static
+../Core/Src/ask_hal.c:43:10:ask_write_pin_315	16	static
+../Core/Src/ask_hal.c:44:10:ask_read_pin_315	4	static
+../Core/Src/ask_hal.c:45:10:ask_micros_315	8	static
+../Core/Src/ask_hal.c:46:10:ask_init_rx315	4	static
+../Core/Src/ask_hal.c:47:10:ask_init_tx315	4	static
+../Core/Src/ask_hal.c:48:10:ask_delay_ms_315	16	static
+../Core/Src/ask_hal.c:49:10:ask_delay_us_315	16	static

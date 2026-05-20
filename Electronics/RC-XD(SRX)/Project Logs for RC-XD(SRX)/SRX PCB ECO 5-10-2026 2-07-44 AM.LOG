@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=S1-1
+Removed Pin From Net: NetName=GND Pin=S1-2
+Removed Pin From Net: NetName=NetC25_2 Pin=S1-3
+Removed Pin From Net: NetName=NetC25_2 Pin=S1-4
+Change Component Comment : Designator=S1 Old Comment=TS04-66-73-BK-260-SMT New Comment=TS04
+Added Pin To Net: NetName=NetC25_2 Pin=S1-1
+Added Pin To Net: NetName=NetC25_2 Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-3
+Added Pin To Net: NetName=GND Pin=S1-4

@@ -1,3 +1,5 @@
+"./Core/Src/ask.o"
+"./Core/Src/ask_hal.o"
 "./Core/Src/btm9011.o"
 "./Core/Src/main.o"
 "./Core/Src/rf433.o"

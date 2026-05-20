@@ -21,8 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "rf433.h"
-#include "btm9011.h"
+#include "ask_hal.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -33,10 +32,21 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
-#define JOY_CENTER    2048										/* Adjust to find center */
-#define JOY_DEADZONE  200										/* Below this value and the negative v and h are 0 */
-#define JOY_RANGE     (JOY_CENTER - JOY_DEADZONE)				/* Default: 1848 (2048-200) */
-#define CLAMP31(x)    ((x) > 31 ? 31 : (x) < -31 ? -31 : (x))	/* Clamp for speed */
+#define JOY_CENTER    2048                                          /* ADC mid-scale */
+#define JOY_DEADZONE  200                                           /* dead-band either side */
+#define JOY_RANGE     (JOY_CENTER - JOY_DEADZONE)                  /* usable range: 1848 */
+#define MOTOR_DUTY_MIN  2U                                          /* min duty when moving */
+#define MOTOR_DUTY_MAX  31U                                         /* matches MOTOR_PWM_STEPS-1 on RX */
+
+/* Packet field: direction byte values — must match btm9011_simple.h on RX */
+#define DIR_BRAKE    0U
+#define DIR_FORWARD  1U
+#define DIR_REVERSE  2U
+
+/* ASK transmission parameters */
+#define ASK_BIT_TIME_US  1000U   /* 1 kbps — conservative, suits XY-MK-5V/FS1000A */
+#define ASK_RETRIES      2U      /* repeat count per ask_send_bytes call */
+#define ASK_SEND_PERIOD  50U     /* ms between transmissions (~20 Hz update rate) */
 
 /* USER CODE END PD */
 
@@ -53,8 +63,6 @@ I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim2;
 
 /* USER CODE BEGIN PV */
-
-RF433_HandleTypeDef   hrf;
 
 /* USER CODE END PV */
 
@@ -109,36 +117,61 @@ int main(void)
   MX_ADC1_Init();
   /* USER CODE BEGIN 2 */
 
-  RF433_Init(	&hrf,
-				RF_DATA_GPIO_Port,      RF_DATA_Pin,		/* TX — FS1000A DATA		*/
-				PB11_GPIO_Port,  		PB11_Pin);  		/* RX — unused on TX board	*/
-
-  HAL_TIM_Base_Start_IT(&htim2);
+  /* ASK 433 MHz transmitter — TX-only, no RX pin on this board */
+  ask433.fn_micros    = ask_micros_433;
+  ask433.fn_delay_ms  = ask_delay_ms_433;
+  ask433.fn_delay_us  = ask_delay_us_433;
+  ask433.fn_init_tx   = ask_init_tx433;
+  ask433.fn_write_pin = ask_write_pin_433;
+  ask433.fn_init_rx   = NULL;
+  ask433.fn_read_pin  = NULL;
+  ask_init(&ask433);
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  static const uint8_t test_pkt[] = { 0x01, 0x01 };
-  uint8_t sw_l_prev = GPIO_PIN_SET;
 
   while (1)
   {
-    uint8_t sw_l = HAL_GPIO_ReadPin(SW_L_GPIO_Port, SW_L_Pin);
-
-    if (sw_l == GPIO_PIN_RESET && sw_l_prev == GPIO_PIN_SET) {
-      HAL_Delay(20);
-      if (HAL_GPIO_ReadPin(SW_L_GPIO_Port, SW_L_Pin) == GPIO_PIN_RESET)
-        RF433_Send(&hrf, test_pkt, sizeof(test_pkt));
-    }
-    sw_l_prev = sw_l;
-    HAL_Delay(10);
-
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+    /* Read joystick axes */
+    uint16_t raw_v = ADC_ReadChannel(ADC_CHANNEL_0); /* vertical  — throttle */
+    uint16_t raw_h = ADC_ReadChannel(ADC_CHANNEL_1); /* horizontal — steering */
+
+    /* ── Throttle ─────────────────────────────────────────────────────────── */
+    int16_t  dv       = (int16_t)raw_v - JOY_CENTER;
+    uint8_t  duty     = 0;
+    uint8_t  dir      = DIR_BRAKE;
+
+    if (dv > (int16_t)JOY_DEADZONE) {
+      int16_t mag = dv - (int16_t)JOY_DEADZONE;
+      if (mag > (int16_t)JOY_RANGE) mag = (int16_t)JOY_RANGE;
+      duty = (uint8_t)(MOTOR_DUTY_MIN + (uint32_t)mag * (MOTOR_DUTY_MAX - MOTOR_DUTY_MIN) / JOY_RANGE);
+      dir  = DIR_FORWARD;
+    } else if (dv < -(int16_t)JOY_DEADZONE) {
+      int16_t mag = -dv - (int16_t)JOY_DEADZONE;
+      if (mag > (int16_t)JOY_RANGE) mag = (int16_t)JOY_RANGE;
+      duty = (uint8_t)(MOTOR_DUTY_MIN + (uint32_t)mag * (MOTOR_DUTY_MAX - MOTOR_DUTY_MIN) / JOY_RANGE);
+      dir  = DIR_REVERSE;
+    }
+
+    /* ── Steering ─────────────────────────────────────────────────────────── */
+    /* Map 0-4095 → 0-255 */
+    uint8_t steering = (uint8_t)(raw_h * 255U / 4095U);
+
+    /* ── Build and send 3-byte packet ────────────────────────────────────── */
+    /* [duty 0-31][dir 0=brake/1=fwd/2=rev][steering 0-255, 128=centre] */
+    uint8_t pkt[3] = { duty, dir, steering };
+    ask_send_bytes(&ask433, pkt, 3, ASK_BIT_TIME_US, ASK_RETRIES);
+
+    HAL_Delay(ASK_SEND_PERIOD);
+
+    /* USER CODE END 3 */
   }
-  /* USER CODE END 3 */
 }
 
 /**
@@ -385,12 +418,6 @@ static uint16_t ADC_ReadChannel(uint32_t channel)
     HAL_ADC_Stop(&hadc1);
     return val;
 }
-
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
-  {
-      if (htim->Instance == TIM2)
-          RF433_TimerISR(&hrf);
-  }
 
 /* USER CODE END 4 */
 
