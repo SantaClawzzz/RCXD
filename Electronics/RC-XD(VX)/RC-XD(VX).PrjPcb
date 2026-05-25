@@ -52,11 +52,11 @@ PrefsRevisionGUID=
 [Document1]
 DocumentPath=VX.SchDoc
 AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
+AnnotateStartValue=100
+AnnotationIndexControlEnabled=1
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -1075,11 +1075,134 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Vault Name
+ComponentLibraryIdentifier0=Krakul Vault
+ComponentDesignItemID0=CMP-00019-3
+ComponentSymbolReference0=04ef17e7ed04f306c00cc4b237f44d7
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Vault Name
+ComponentLibraryIdentifier1=Krakul Vault
+ComponentDesignItemID1=CMP-001-0054-5
+ComponentSymbolReference1=RESISTOR_GENERIC_IEC
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Vault Name
+ComponentLibraryIdentifier2=Krakul Vault
+ComponentDesignItemID2=CMP-001-0093-2
+ComponentSymbolReference2=RESISTOR_GENERIC_IEC
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Vault Name
+ComponentLibraryIdentifier3=Krakul Vault
+ComponentDesignItemID3=CMP-001-0125-2
+ComponentSymbolReference3=RESISTOR_GENERIC_IEC
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Vault Name
+ComponentLibraryIdentifier4=Krakul Vault
+ComponentDesignItemID4=CMP-001-0142-2
+ComponentSymbolReference4=RESISTOR_GENERIC_IEC
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Vault Name
+ComponentLibraryIdentifier5=Krakul Vault
+ComponentDesignItemID5=CMP-001-0829-2
+ComponentSymbolReference5=CAPACITOR_NONPOL_IEC
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Vault Name
+ComponentLibraryIdentifier6=Krakul Vault
+ComponentDesignItemID6=CMP-001-1113-2
+ComponentSymbolReference6=CAPACITOR_NONPOL_IEC
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Vault Name
+ComponentLibraryIdentifier7=Krakul Vault
+ComponentDesignItemID7=CMP-001-1124-2
+ComponentSymbolReference7=CAPACITOR_NONPOL_IEC
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Vault Name
+ComponentLibraryIdentifier8=Krakul Vault
+ComponentDesignItemID8=CMP-001-1777-1
+ComponentSymbolReference8=GENERIC TANT CAP
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Vault Name
+ComponentLibraryIdentifier9=Krakul Vault
+ComponentDesignItemID9=CMP-ROOT-00025-2
+ComponentSymbolReference9=LED generic
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Vault Name
+ComponentLibraryIdentifier10=Krakul Vault
+ComponentDesignItemID10=CMP-ROOT-01143-2
+ComponentSymbolReference10=U.FL-R-SMT-1(10)
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Vault Name
+ComponentLibraryIdentifier11=Krakul Vault
+ComponentDesignItemID11=CMP-ROOT-01260-4
+ComponentSymbolReference11=JS202011CQN-Symbol-1
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Vault Name
+ComponentLibraryIdentifier12=Krakul Vault
+ComponentDesignItemID12=CMP-ROOT-01262-6
+ComponentSymbolReference12=XT30U-F-Symbol-1
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Vault Name
+ComponentLibraryIdentifier13=Krakul Vault
+ComponentDesignItemID13=CMP-ROOT-01308-2
+ComponentSymbolReference13=Schottky generic 2 pins
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Vault Name
+ComponentLibraryIdentifier14=Krakul Vault
+ComponentDesignItemID14=CMP-ROOT-01309-1
+ComponentSymbolReference14=INDUCTOR_SHIELDED
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Vault Name
+ComponentLibraryIdentifier15=Krakul Vault
+ComponentDesignItemID15=CMP-ROOT-01317-2
+ComponentSymbolReference15=P-CH MOSFET 8-pin v2
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Vault Name
+ComponentLibraryIdentifier16=Krakul Vault
+ComponentDesignItemID16=CMP-ROOT-01328-1
+ComponentSymbolReference16=NPN SOT23
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Vault Name
+ComponentLibraryIdentifier17=Krakul Vault
+ComponentDesignItemID17=CMP-ROOT-01331-1
+ComponentSymbolReference17=N-CH MOSFET
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Vault Name
+ComponentLibraryIdentifier18=Krakul Vault
+ComponentDesignItemID18=CMP-ROOT-01340-1
+ComponentSymbolReference18=RX5808
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
+ComponentLibIdentifierKind19=Vault Name
+ComponentLibraryIdentifier19=Krakul Vault
+ComponentDesignItemID19=CMP-ROOT-01344-2
+ComponentSymbolReference19=NYS354
+ComponentUpdate19=1
+ComponentIsDeviceSheet19=0
 
 [NetInfos]
-Net1=NetName=12V|NetColor=clLime
-Net2=NetName=5V|NetColor=$00000098
-Net3=NetName=GND|NetColor=$00434343
+Net1=NetName=+12V|NetColor=clLime
+Net2=NetName=12V|NetColor=clLime
+Net3=NetName=5V|NetColor=$00000098
+Net4=NetName=BAT_SW|NetColor=clAqua
+Net5=NetName=BAT+|NetColor=clBlue
+Net6=NetName=GND|NetColor=$00434343
 
 [Comparison Options]
 ComparisonOptions0=Kind=Net|MinPercent=75|MinMatch=3|ShowMatch=0|UseName=-1|InclAllRules=0

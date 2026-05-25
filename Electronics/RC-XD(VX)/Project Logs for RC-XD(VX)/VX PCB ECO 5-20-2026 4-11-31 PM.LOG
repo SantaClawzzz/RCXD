@@ -1,0 +1,18 @@
+Added Component: Designator=U100(RX5808-Footprint-1)
+Add component (AddParameter): Name = "Case/Package"; Value = "Module"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Unknown"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "SMD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part number"; Value = "RX5808"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "12"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=U100-1
+Added Pin To Net: NetName=NetC100_1 Pin=U100-2
+Added Pin To Net: NetName=5V Pin=U100-5
+Added Pin To Net: NetName=GND Pin=U100-6
+Added Pin To Net: NetName=GND Pin=U100-7
+Added Pin To Net: NetName=GND Pin=U100-8
+Added Pin To Net: NetName=GND Pin=U100-9
+Added Pin To Net: NetName=GND Pin=U100-10
+Added Pin To Net: NetName=NetJ102_1 Pin=U100-11
+Added Pin To Net: NetName=GND Pin=U100-12
+Added Member To Class: ClassName=VX Member=Component U100 RX5808
